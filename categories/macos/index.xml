@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macOS on mLogger</title>
+    <link>https://rxtee.com/categories/macos/</link>
+    <description>Recent content in macOS on mLogger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Mar 2020 12:40:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://rxtee.com/categories/macos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Homebrew</title>
+      <link>https://rxtee.com/posts/homebrew/</link>
+      <pubDate>Fri, 20 Mar 2020 12:40:38 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/homebrew/</guid>
+      <description>Homebrew. The Missing Package Manager for macOS (or Linux).
+Install /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; Paste that in a macOS Terminal or Linux shell prompt.</description>
+    </item>
+    
+  </channel>
+</rss>

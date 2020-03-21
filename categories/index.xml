@@ -6,10 +6,19 @@
     <description>Recent content in Categories on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 20 Mar 2020 12:40:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2020 13:20:58 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Website</title>
+      <link>https://rxtee.com/categories/website/</link>
+      <pubDate>Fri, 20 Mar 2020 13:20:58 +0800</pubDate>
+      
+      <guid>https://rxtee.com/categories/website/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>macOS</title>

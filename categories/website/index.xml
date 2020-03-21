@@ -6,10 +6,22 @@
     <description>Recent content in Website on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Mar 2020 21:05:43 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 21:40:09 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/categories/website/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>网站上支持平滑滚动</title>
+      <link>https://rxtee.com/posts/smoothscroll/</link>
+      <pubDate>Sat, 21 Mar 2020 21:40:09 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/smoothscroll/</guid>
+      <description>在上一篇（构建文章目录）设置了文章目录，但我发现在点击目录里的节点时，瞬间跳转到对应的文章位置，感觉有些生硬。
+那么有没有一种方法可以让页面滚动更为顺滑呢？
+经查阅，css 就支持这一特性，设置也非常简单。
+html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需要做的只是在 static\css 文件夹内新建名为 smooth-scroll.css 的文件，将上述样式写入其中。并在 config.toml 配置文件夹中引用，即可。</description>
+    </item>
     
     <item>
       <title>构建文章目录</title>

@@ -149,8 +149,18 @@
 <ul>
 <li>
 <ul>
-<li><a href="#安装-utterances-app">安装 Utterances App</a></li>
-<li><a href="#配置">配置</a></li>
+<li><a href="#安装-utterances-app">安装 Utterances App</a>
+<ul>
+<li><a href="#步骤一">步骤一</a></li>
+<li><a href="#步骤二">步骤二</a></li>
+<li><a href="#步骤三">步骤三</a></li>
+</ul></li>
+<li><a href="#配置">配置</a>
+<ul>
+<li><a href="#步骤一-1">步骤一</a></li>
+<li><a href="#步骤二-1">步骤二</a></li>
+<li><a href="#步骤三-1">步骤三</a></li>
+</ul></li>
 <li><a href="#个性化">个性化</a>
 <ul>
 <li><a href="#主题">主题</a></li>
@@ -170,17 +180,23 @@
 
 <h2 id="安装-utterances-app">安装 Utterances App</h2>
 
-<p>步骤一：首先，请确保已注册 <a href="https://github.com/">Github</a>。注册完毕之后或你已有账号请前往步骤二。</p>
+<h3 id="步骤一">步骤一</h3>
+
+<p>首先，请确保已注册 <a href="https://github.com/">Github</a>。注册完毕之后或你已有账号请前往步骤二。</p>
 
 <p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1c2qt7a9j30u011uwj5.jpg" alt="Register" /></p>
 
-<p>步骤二：创建所需的仓库。</p>
+<h3 id="步骤二">步骤二</h3>
+
+<p>创建所需的仓库。</p>
 
 <p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd1ttbd155j30yc0u0grs.jpg" alt="Create a new repository" /></p>
 
 <p>由于我已经创建了 <code>hugo-comment</code> ，这里用 <code>hugo-comments</code> 做演示。你创建的时候取你喜欢的名字就好。</p>
 
-<p>步骤三：在 GitHub 上安装 Utterances App。</p>
+<h3 id="步骤三">步骤三</h3>
+
+<p>在 GitHub 上安装 Utterances App。</p>
 
 <p>进入 <a href="https://github.com/apps/utterances">Utterances App</a> 主页，点击安装。</p>
 
@@ -194,7 +210,9 @@
 
 <h2 id="配置">配置</h2>
 
-<p>步骤一：在 <code>config.toml</code> 配置中新增如下配置。</p>
+<h3 id="步骤一-1">步骤一</h3>
+
+<p>在 <code>config.toml</code> 配置中新增如下配置。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">disable_comments</span> = <span style="color:#66d9ef">false</span>
 [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">utteranc</span>]
     <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;{Github Name}/{Repo Name}&#34;</span>
@@ -202,9 +220,11 @@
     <span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;github-dark&#34;</span></code></pre></div>
 <p>其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。</p>
 
-<p>步骤二：创建 HTML 模板。</p>
+<h3 id="步骤二-1">步骤二</h3>
 
-<p>在 <code>themes\xxxxx\layouts\partials</code> 文件夹下创建评论模板。</p>
+<p>创建 HTML 模板。</p>
+
+<p>在 <code>theme\xxxxx\layouts\partials</code> 文件夹下创建评论模板。</p>
 
 <p>新建名如 <code>utteranc.html</code> 的文件，文件内容为：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{- if isset .Site.Params &#34;utteranc&#34; -}}
@@ -218,7 +238,9 @@
   &lt;/<span style="color:#f92672">script</span>&gt;
   {{- end -}}
 {{- end -}}</code></pre></div>
-<p>步骤三：配置显示位置。</p>
+<h3 id="步骤三-1">步骤三</h3>
+
+<p>配置显示位置。</p>
 
 <p>打开页面模板，以我的主题为例为 <code>single.html</code> 文件。在 <code>&lt;footer&gt;&lt;/footer&gt;</code> 标签内添加 <code>{{ partial &quot;posts/utteranc.html&quot; . }}</code> 标签内容。</p>
 

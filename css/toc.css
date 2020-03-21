@@ -1,0 +1,20 @@
+.post-toc-absolute {
+    position: absolute;
+    margin-left: 860px;
+    padding-left: 30px;
+}
+
+.post-toc-fixed {
+    position: fixed;
+    top: 20px;
+    margin-left: 860px;
+    padding-left: 30px;
+}
+
+.post-toc-absolute #TableOfContents > ul {
+    list-style: none;
+}
+
+.post-toc-fixed #TableOfContents > ul {
+    list-style: none;
+}

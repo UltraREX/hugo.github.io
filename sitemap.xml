@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rxtee.com/tags/blog/</loc>
+    <lastmod>2020-03-20T16:29:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/categories/</loc>
+    <lastmod>2020-03-20T16:29:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/posts/hello_hugo/</loc>
+    <lastmod>2020-03-20T16:29:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/posts/</loc>
+    <lastmod>2020-03-20T16:29:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/tags/</loc>
+    <lastmod>2020-03-20T16:29:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/tags/website/</loc>
+    <lastmod>2020-03-20T16:29:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/categories/website/</loc>
+    <lastmod>2020-03-20T16:29:27+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rxtee.com/about/</loc>
     <lastmod>2020-03-20T13:27:05+08:00</lastmod>
   </url>
@@ -10,36 +45,6 @@
   <url>
     <loc>https://rxtee.com/</loc>
     <lastmod>2020-03-20T13:27:05+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/tags/blog/</loc>
-    <lastmod>2020-03-20T13:20:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/categories/</loc>
-    <lastmod>2020-03-20T13:20:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/posts/</loc>
-    <lastmod>2020-03-20T13:20:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/tags/</loc>
-    <lastmod>2020-03-20T13:20:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/tags/website/</loc>
-    <lastmod>2020-03-20T13:20:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/categories/website/</loc>
-    <lastmod>2020-03-20T13:20:58+08:00</lastmod>
   </url>
   
   <url>

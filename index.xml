@@ -12,6 +12,22 @@
     
     
     <item>
+      <title>Hello Hugo</title>
+      <link>https://rxtee.com/posts/hello_hugo/</link>
+      <pubDate>Fri, 20 Mar 2020 16:29:27 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/hello_hugo/</guid>
+      <description>Hugo Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+安装 Mac/Linux 下推荐使用 brew 安装，如果你还没有安装 brew 请点击这里查看安装方法。
+brew install hugo 执行成功后，再次执行以下指令，验证是否安装成功。
+hugo version Windows 用户请参见官网链接进行安装。
+基本使用 创建新站点 hugo new site blog 添加主题 cd blog git init git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder 然后在 config.toml 配置文件中，添加 theme = &amp;ldquo;hugo-coder&amp;rdquo;
+创建第一个博文 hugo new posts/my-first-post.md 执行完毕会在 content/posts 文件夹内得到名为 my-first-post.md 的文件。
+打开该文件，其内容大概为：
++++ draft = true date = 2020-03-20T16:29:27+08:00 title = &amp;#34;&amp;#34; description = &amp;#34;&amp;#34; slug = &amp;#34;&amp;#34; tags = [] categories = [] externalLink = &amp;#34;&amp;#34; series = [] +++ 启动 Hugo 服务器 hugo server -D | EN +------------------+----+ Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 3 Processed images | 0 Aliases | 1 Sitemaps | 1 Cleaned | 0 Total in 11 ms Watching for changes in /Users/xxx/blog/{content,data,layouts,static,themes} Watching for config changes in /Users/xxx/blog/config.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>https://rxtee.com/about/</link>
       <pubDate>Fri, 20 Mar 2020 13:27:05 +0800</pubDate>

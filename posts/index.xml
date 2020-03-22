@@ -20,7 +20,7 @@
       <description>在上一篇（构建文章目录）设置了文章目录，但我发现在点击目录里的节点时，瞬间跳转到对应的文章位置，感觉有些生硬。
 那么有没有一种方法可以让页面滚动更为顺滑呢？
 经查阅，css 就支持这一特性，设置也非常简单。
-html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需要做的只是在 static\css 文件夹内新建名为 smooth-scroll.css 的文件，将上述样式写入其中。并在 config.toml 配置文件夹中引用，即可。</description>
+html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需要做的只是在 static/css 文件夹内新建名为 smooth-scroll.css 的文件，将上述样式写入其中。并在 config.toml 配置文件夹中引用，即可。</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
 配置 步骤一 在 config.toml 配置中新增如下配置。
 [params] # Table of Contents toc = true wordCount = 0 其中 wordCount 为文章字数大于该值时才生成目录配置。
 步骤二 创建 HTML 模板。
-在 layouts\partials 文件夹下创建文章目录模板。
+在 layouts/partials 文件夹下创建文章目录模板。
 新建名如 toc.html 的文件，文件内容为：
 {{ if and (gt .WordCount .Site.Params.wordCount ) (eq (.Site.Params.toc | default false) true) }} &amp;lt;aside class=&amp;#34;post-toc-absolute&amp;#34; id=&amp;#34;post-toc&amp;#34;&amp;gt; {{ .TableOfContents }} &amp;lt;/aside&amp;gt; {{ end }} 步骤三 配置显示位置。
 打开页面模板，以我的主题为例为 single.html 文件。在合适的位置插入 {{ partial &amp;quot;toc.html&amp;quot; . }} 。以我的博客为例，我放在了文章正文所在 div 前，方便以后控制样式和位置。</description>
@@ -56,7 +56,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
 配置 步骤一 在 config.toml 配置中新增如下配置。
 disable_comments = false [params.utteranc] repo = &amp;#34;{Github Name}/{Repo Name}&amp;#34; issueTerm = &amp;#34;title&amp;#34; # 设置每篇文章对应的 issue 的名字 theme = &amp;#34;github-dark&amp;#34; 其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。
 步骤二 创建 HTML 模板。
-在 theme\xxxxx\layouts\partials 文件夹下创建评论模板。</description>
+在 theme/xxxxx/layouts/partials 文件夹下创建评论模板。</description>
     </item>
     
     <item>

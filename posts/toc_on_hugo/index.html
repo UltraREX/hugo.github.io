@@ -189,7 +189,7 @@
 
 <p>创建 HTML 模板。</p>
 
-<p>在 <code>layouts\partials</code> 文件夹下创建文章目录模板。</p>
+<p>在 <code>layouts/partials</code> 文件夹下创建文章目录模板。</p>
 
 <p>新建名如 <code>toc.html</code> 的文件，文件内容为：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ if and (gt .WordCount .Site.Params.wordCount ) (eq (.Site.Params.toc | default false) true) }}

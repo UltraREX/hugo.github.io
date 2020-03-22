@@ -6,10 +6,28 @@
     <description>Recent content in Posts on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Mar 2020 21:40:09 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 13:07:39 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>网站支持一键向上</title>
+      <link>https://rxtee.com/posts/back_to_top/</link>
+      <pubDate>Sun, 22 Mar 2020 13:07:39 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/back_to_top/</guid>
+      <description>如果遇到长文章，网页会变得很长很长，当看到底部时，想快速返回到网页的顶端，单凭滚动鼠标滚轮，亦或者靠滑动妙控 板，似乎都是一件「苦差事」。一键向上👆变得尤为重要。
+废话不多说了，show you my code.
+配置 步骤一 创建 HTML 模板。
+在 theme/your theme name/layouts/partials 文件夹下创建文章目录模板。
+新建名如 back_to_top.html 的文件，文件内容为：
+&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;back-to-top&amp;#34; style=&amp;#34;display: none;&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;fa fa-arrow-up&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; 默认隐藏，稍后再来控制它的显隐。
+步骤二 创建样式。
+在 static/css 文件夹下创建样式文件。
+新建名如 back_to_top.css 的文件，文件内容为：
+.back-to-top { position: fixed; bottom: 25px; right: 25px; background: rgba(0, 0, 0, 0.5); width: 50px; height: 50px; display: block; text-decoration: none; -webkit-border-radius: 35px; -moz-border-radius: 35px; border-radius: 35px; } .back-to-top i { color: #fff; margin: 0; position: relative; left: 15px; top: 14px; font-size: 22px; } .</description>
+    </item>
     
     <item>
       <title>网站上支持平滑滚动</title>
@@ -33,7 +51,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
 配置 步骤一 在 config.toml 配置中新增如下配置。
 [params] # Table of Contents toc = true wordCount = 0 其中 wordCount 为文章字数大于该值时才生成目录配置。
 步骤二 创建 HTML 模板。
-在 layouts/partials 文件夹下创建文章目录模板。
+在 theme/your theme name/layouts/partials 文件夹下创建文章目录模板。
 新建名如 toc.html 的文件，文件内容为：
 {{ if and (gt .WordCount .Site.Params.wordCount ) (eq (.Site.Params.toc | default false) true) }} &amp;lt;aside class=&amp;#34;post-toc-absolute&amp;#34; id=&amp;#34;post-toc&amp;#34;&amp;gt; {{ .TableOfContents }} &amp;lt;/aside&amp;gt; {{ end }} 步骤三 配置显示位置。
 打开页面模板，以我的主题为例为 single.html 文件。在合适的位置插入 {{ partial &amp;quot;toc.html&amp;quot; . }} 。以我的博客为例，我放在了文章正文所在 div 前，方便以后控制样式和位置。</description>
@@ -56,7 +74,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
 配置 步骤一 在 config.toml 配置中新增如下配置。
 disable_comments = false [params.utteranc] repo = &amp;#34;{Github Name}/{Repo Name}&amp;#34; issueTerm = &amp;#34;title&amp;#34; # 设置每篇文章对应的 issue 的名字 theme = &amp;#34;github-dark&amp;#34; 其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。
 步骤二 创建 HTML 模板。
-在 theme/xxxxx/layouts/partials 文件夹下创建评论模板。</description>
+在 theme/your theme name/layouts/partials 文件夹下创建评论模板。</description>
     </item>
     
     <item>

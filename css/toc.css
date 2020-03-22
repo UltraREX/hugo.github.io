@@ -10,11 +10,3 @@
     margin-left: 860px;
     padding-left: 30px;
 }
-
-.post-toc-absolute #TableOfContents > ul {
-    list-style: none;
-}
-
-.post-toc-fixed #TableOfContents > ul {
-    list-style: none;
-}

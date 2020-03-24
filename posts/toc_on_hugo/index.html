@@ -147,7 +147,7 @@
       </header>
     
       
-<aside class="post-toc-absolute" id="post-toc">
+<aside class="post-toc-absolute" class="toc" id="post-toc">
     
     <nav id="TableOfContents">
 <ul>
@@ -219,6 +219,17 @@
     <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
     <span style="color:#66d9ef">margin-left</span>: <span style="color:#ae81ff">860</span><span style="color:#66d9ef">px</span>;
     <span style="color:#66d9ef">padding-left</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+}
+
+<span style="color:#75715e">/* Media Queries */</span>
+<span style="color:#75715e">/* 简单用设备屏幕尺寸来判断是否是移动端 */</span>
+@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">1080px</span><span style="color:#f92672">)</span> {
+    .<span style="color:#a6e22e">post-toc-absolute</span> {
+        <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+    }
+    .<span style="color:#a6e22e">post-toc-fixed</span> {
+        <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+    }
 }</code></pre></div>
 <p>并在 <code>config.toml</code> 中配置使用：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>]

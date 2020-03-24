@@ -1,12 +1,21 @@
 .post-toc-absolute {
     position: absolute;
-    margin-left: 860px;
-    padding-left: 30px;
+    right: 12%;
 }
 
 .post-toc-fixed {
     position: fixed;
     top: 20px;
-    margin-left: 860px;
-    padding-left: 30px;
+    right: 12%;
+}
+
+
+/* Media Queries */
+@media (max-width: 1080px) {
+    .post-toc-absolute {
+        display: none;
+    }
+    .post-toc-fixed {
+        display: none;
+    }
 }

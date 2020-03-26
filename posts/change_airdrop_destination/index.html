@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ray Young">
+    <meta name="description" content="No hard feelings.">
+    <meta name="keywords" content="blog, macOS, Mac, iMac, MacBook, MacBook Pro, iOS, iPhone, watchOS, Apple Watch, AirPods, AirPods Pro, Tech, Code, Coder, Developer, Movie, Music">
+
+    <meta property="og:image" content="/img/favicon.ico" />
+    
+    <meta property="og:locale" content="zh-cn" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="修改 AirDrop 文件存放位置"/>
+<meta name="twitter:description" content="修改 AirDrop 文件存放位置"/>
+
+    <meta property="og:title" content="修改 AirDrop 文件存放位置" />
+<meta property="og:description" content="修改 AirDrop 文件存放位置" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rxtee.com/posts/change_airdrop_destination/" />
+<meta property="article:published_time" content="2020-03-26T19:26:25+08:00" />
+<meta property="article:modified_time" content="2020-03-26T19:26:25+08:00" />
+
+
+    
+      <base href="https://rxtee.com/posts/change_airdrop_destination/">
+    
+    <title>
+  修改 AirDrop 文件存放位置 · mLogger
+</title>
+
+    
+      <link rel="canonical" href="https://rxtee.com/posts/change_airdrop_destination/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rxtee.com/css/coder.min.37256bf8015e4a1f55770a08a5cf13861895cd552a70a4b677409713756936a3.css" integrity="sha256-NyVr&#43;AFeSh9VdwoIpc8ThhiVzVUqcKS2d0CXE3VpNqM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://rxtee.com/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+      <link rel="stylesheet" href="https://rxtee.com/css/custom.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.67.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rxtee.com/">
+      mLogger
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/categories/">Categories</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+<link rel="stylesheet" href="https://rxtee.com/css/pojoaque.css">
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">修改 AirDrop 文件存放位置</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-03-26T19:26:25&#43;08:00'>
+                March 26, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://rxtee.com/categories/mac-tips/">Mac Tips</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://rxtee.com/tags/mac-tips/">Mac Tips</a>
+      <span class="separator">•</span>
+    <a href="https://rxtee.com/tags/airdrop/">AirDrop</a></div>
+
+        </div>
+      </header>
+    
+      
+<aside class="post-toc-absolute" id="post-toc">
+    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#背景">背景</a></li>
+<li><a href="#如何自定义存放路径">如何自定义存放路径？</a></li>
+<li><a href="#folder-actions">Folder Actions</a>
+<ul>
+<li><a href="#什么是-folder-actions">什么是 Folder Actions</a></li>
+<li><a href="#思路">思路</a></li>
+<li><a href="#文件属性">👉文件属性</a></li>
+<li><a href="#实现">实现</a>
+<ul>
+<li><a href="#创建-applescript-脚本">创建 AppleScript 脚本</a></li>
+<li><a href="#配置">配置</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#后记">后记</a></li>
+</ul></li>
+</ul>
+</nav>
+</aside>
+
+
+      <div>
+        
+        
+
+<h2 id="背景">背景</h2>
+
+<p>「滴滴滴」，你的 Mac 收到了你 AirDrop 的文件，并「贴心」地把它存放在了 <code>Downloads</code> （下载）文件夹下，而你却并不期望它自动存放在下载文件夹目录下，至少我不是的。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd7k2lezh4j30ea0pwq64.jpg" alt="Downloads" /></p>
+
+<p>我喜欢给文件来源分类，譬如上图的样子，这样在很容易知道文件来源。</p>
+
+<h2 id="如何自定义存放路径">如何自定义存放路径？</h2>
+
+<p>按照「惯例」 Mac 上的一些配置都是以 <code>plist</code> 文件来管理的，只要找到对应的 <code>plist</code> 文件就可以「魔改」它。然而，让我失望的是：网上冲浪了一圈，并没有发现对应的配置文件😢。如果你知道请告诉我。</p>
+
+<p>那么有没有其他途径呢？</p>
+
+<h2 id="folder-actions">Folder Actions</h2>
+
+<h3 id="什么是-folder-actions">什么是 Folder Actions</h3>
+
+<blockquote>
+<p>Folder Actions is a feature of macOS that lets you associate AppleScript scripts with folders. A Folder Action script is executed when the folder to which it is attached has items added or removed, or when its window is opened, closed, moved, or resized. The script provides a handler that matches the appropriate format for the action, as described in this chapter.</p>
+</blockquote>
+
+<p>大概翻译为：Folder Actions 是 macOS 的一项功能，可让你将 AppleScript 脚本与文件夹进行关联。当关联的文件夹有添加或删除的项目，或者其窗口打开，关闭，移动或调整大小时，将执行“文件夹操作”脚本。详情可以点击<a href="https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_folder_actions.html">这里</a>查看官方文档。</p>
+
+<h3 id="思路">思路</h3>
+
+<p>按照文档的说法，只要我写好一个 AppleScript 脚本并与下载文件夹关联，那么当 Mac 接收到 AirDrop 来的文件时，就自动移动该文件到我期望的文件夹下。看起来似乎可行。</p>
+
+<p>不过，要想移动 AirDrop 来的文件，就必须知道该文件是通过 AirDrop 方式来的，那么如何识别出下载文件夹下新增的文件是 AirDrop 来的呢？</p>
+
+<h3 id="文件属性">👉文件属性</h3>
+
+<p>macOS 下有「文件属性」这一概念，如果你经常使用命令行，那么你对 <code>ls</code> 指令一定不陌生。在日常 <code>ls -la</code> 时，可能会遇到某些文件的权限列表后面还会有 <code>@</code> 符号，它就代表该文件有扩展属性。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd7lcmo42fj30su05adgi.jpg" alt="WeChat Beta" /></p>
+
+<p>抑或是你从互联网上下载了某一应用，当你第一次打开该应用时系统会提示「您确定要打开它吗？”如果您对文件的安全性有疑问，应点按“取消”」。这也是利用「文件属性」这一特性来实现的。</p>
+
+<p>那么我只要利用这一特性，来判断文件是否来源于 AirDrop 即可筛选出所需移动的文件。</p>
+
+<p>经查 AirDrop 对应 <code>com.apple.quarantine</code> 属性的值为 59 。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd7lvstttsj30ug08ojy0.jpg" alt="quarantine" /></p>
+
+<h3 id="实现">实现</h3>
+
+<h4 id="创建-applescript-脚本">创建 AppleScript 脚本</h4>
+
+<p>首先，确保 <code>/Users/username/Library/Scripts/</code> 路径下是否有 <code>Folder Action Scripts</code> 文件夹 —— 用来存放所需的脚本。没有则创建。</p>
+
+<p>然后在该目录下（<code>/Users/username/Library/Scripts/Folder Action Scripts</code>）创建 AppleScript 脚本，形如：AirDrop.scpt ，文件名取一个你喜欢的即可。脚本内容为：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-applescript" data-lang="applescript"><span style="color:#66d9ef">property</span> AIRDROP_FOLDER : <span style="color:#e6db74">&#34;Macintosh HD:Users:username:Downloads:AirDrop&#34;</span> <span style="color:#75715e"># 期望的路径，用 : 分割</span>
+<span style="color:#66d9ef">property</span> QUARANTINE_KEY : <span style="color:#e6db74">&#34;59&#34;</span>
+
+<span style="color:#66d9ef">property</span> GET_QUARANTINE_COMMAND_START : <span style="color:#e6db74">&#34;ls -l -@ &#39;&#34;</span>
+<span style="color:#66d9ef">property</span> GET_QUARANTINE_COMMAND_END : <span style="color:#e6db74">&#34;&#39; | tr &#39;\\n&#39; &#39; &#39; | sed &#39;s/.*com\\.apple\\.quarantine\\s*\\(\\d*\\)/ \\1/&#39; | awk &#39;{$1=$1};1&#39;&#34;</span>
+
+<span style="color:#66d9ef">on</span> adding folder items <span style="color:#66d9ef">to</span> this_folder after receiving added_items
+    <span style="color:#66d9ef">repeat</span> <span style="color:#66d9ef">with</span> i <span style="color:#66d9ef">from</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">to</span> length <span style="color:#66d9ef">of</span> added_items
+        <span style="color:#66d9ef">set</span> current_item <span style="color:#66d9ef">to</span> item i <span style="color:#66d9ef">of</span> added_items
+        <span style="color:#66d9ef">set</span> quarantine_type <span style="color:#66d9ef">to</span> getQuarantineType(POSIX <span style="color:#a6e22e">path</span> <span style="color:#66d9ef">of</span> current_item)
+        <span style="color:#66d9ef">if</span> quarantine_type <span style="color:#f92672">is equal</span> <span style="color:#66d9ef">to</span> QUARANTINE_KEY <span style="color:#66d9ef">then</span>
+            moveFile(current_item, alias AIRDROP_FOLDER)
+        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">if</span>
+    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">repeat</span>
+<span style="color:#66d9ef">end</span> adding folder items <span style="color:#66d9ef">to</span>
+
+<span style="color:#66d9ef">on</span> moveFile(move_file, destination_dir)
+    <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;Finder&#34;</span>
+        move move_file <span style="color:#66d9ef">to</span> destination_dir <span style="color:#66d9ef">with</span> replacing
+    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
+<span style="color:#66d9ef">end</span> moveFile
+
+<span style="color:#66d9ef">on</span> getQuarantineType(file_path)
+    <span style="color:#66d9ef">return</span> do shell script GET_QUARANTINE_COMMAND_START <span style="color:#f92672">&amp;</span> file_path <span style="color:#f92672">&amp;</span> GET_QUARANTINE_COMMAND_END
+<span style="color:#66d9ef">end</span> getQuarantineType</code></pre></div>
+<p>脚本内 <code>AIRDROP_FOLDER</code> 需要修改为自己期望的路径，注意路径分割符需用 <code>:</code> 而不是常见的 <code>/</code>。</p>
+
+<p>脚本逻辑为：当新增文件的文件属性 <code>com.apple.quarantine</code> 值为 59 时，就将该文件移动到 <code>AIRDROP_FOLDER</code> 设置的路径内。</p>
+
+<h4 id="配置">配置</h4>
+
+<p>右键 <code>Downloads</code> 下载文件夹，服务，打开 Folder Actions 设置。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd7m906nlkj31030u04j5.jpg" alt="Folder Actions Setup" /></p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd7ma156i7j30pc0ae0tm.jpg" alt="Confirm Service" /></p>
+
+<p>点击「运行服务」即可看到以下窗口：</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd7mardu5mj30so0mcwgv.jpg" alt="Folder Actions Setup" /></p>
+
+<p>在左边的配置窗口里添加下载文件夹，在右边的配置窗口里添加我们刚刚编写的 <code>AirDrop.scpt</code> 脚本。</p>
+
+<p>自此，大功告成。当你再 AirDrop 到电脑上文件时，一旦文件接收完毕，系统就会自动将该文件移动到你设置的目录里啦。</p>
+
+<h2 id="后记">后记</h2>
+
+<p>该文档仅保证与本人电脑相仿系统环境下有效，其他环境不做保证，理论上只要系统版本不是太老的话，就没有太大问题，如果有问题欢迎评论交流。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gd7kcfs1esj30yk0meqa6.jpg" alt="" /></p>
+
+      </div>
+      
+      <a href="#">
+    <div class="back-to-top" style="display: none;">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+</a>
+
+      <footer>
+        
+
+
+        
+        
+        <script src="https://utteranc.es/client.js"
+    repo= "UltraREX/hugo-comment"
+    issue-term="title"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Don't Panic.​</p>
+    
+    
+      
+        © 2020
+      
+       Ray Young 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+    
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+    <script src="https://rxtee.com/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="https://rxtee.com/js/toc.js"></script>
+    
+    <script src="https://rxtee.com/js/back_to_top.js"></script>
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+    
+
+    
+  </body>
+
+</html>

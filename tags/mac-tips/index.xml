@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac Tips on mLogger</title>
+    <link>https://rxtee.com/tags/mac-tips/</link>
+    <description>Recent content in Mac Tips on mLogger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Mar 2020 19:26:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://rxtee.com/tags/mac-tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>修改 AirDrop 文件存放位置</title>
+      <link>https://rxtee.com/posts/change_airdrop_destination/</link>
+      <pubDate>Thu, 26 Mar 2020 19:26:25 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/change_airdrop_destination/</guid>
+      <description>背景 「滴滴滴」，你的 Mac 收到了你 AirDrop 的文件，并「贴心」地把它存放在了 Downloads （下载）文件夹下，而你却并不期望它自动存放在下载文件夹目录下，至少我不是的。
+我喜欢给文件来源分类，譬如上图的样子，这样在很容易知道文件来源。
+如何自定义存放路径？ 按照「惯例」 Mac 上的一些配置都是以 plist 文件来管理的，只要找到对应的 plist 文件就可以「魔改」它。然而，让我失望的是：网上冲浪了一圈，并没有发现对应的配置文件😢。如果你知道请告诉我。
+那么有没有其他途径呢？
+Folder Actions 什么是 Folder Actions  Folder Actions is a feature of macOS that lets you associate AppleScript scripts with folders. A Folder Action script is executed when the folder to which it is attached has items added or removed, or when its window is opened, closed, moved, or resized. The script provides a handler that matches the appropriate format for the action, as described in this chapter.</description>
+    </item>
+    
+  </channel>
+</rss>

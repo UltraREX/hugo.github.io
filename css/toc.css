@@ -1,12 +1,12 @@
 .post-toc-absolute {
     position: absolute;
-    right: 12%;
+    right: 4%;
 }
 
 .post-toc-fixed {
     position: fixed;
     top: 20px;
-    right: 12%;
+    right: 4%;
 }
 
 

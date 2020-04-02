@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on mLogger</title>
-    <link>https://rxtee.com/posts/</link>
-    <description>Recent content in Posts on mLogger</description>
+    <title>Hugo on mLogger</title>
+    <link>https://rxtee.com/series/hugo/</link>
+    <description>Recent content in Hugo on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 02 Apr 2020 18:05:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 13:07:39 +0800</lastBuildDate>
     
-	<atom:link href="https://rxtee.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rxtee.com/series/hugo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>树莓派初始化</title>
-      <link>https://rxtee.com/posts/raspberry_pi/</link>
-      <pubDate>Thu, 02 Apr 2020 18:05:51 +0800</pubDate>
-      
-      <guid>https://rxtee.com/posts/raspberry_pi/</guid>
-      <description>什么是树莓派？  树莓派（英语：Raspberry Pi）是一款基于 Linux 的单片机电脑，由英国的树莓派基金会所开发，目的是以低价硬体及自由软体促进学校的基本计算机科学教育。
-树莓派由两家拥有许可的公司（Element 14/Prmier Farnell 和 RS Components）生产，这两家公司都在网上出售树莓派。
-树莓派每一代均使用博通（Broadcom）出产的 ARM 架构处理器，内存在 256MB 和 4GB 之间，主要使用 SD 卡或者 TF 卡作为存储媒躰，配备 USB 接口、HDMI 的视频输出（支持声音输出）和 RCA 端子输出，内置 Ethernet/WLAN/Bluetooth 网络链接的方式（依据型号决定），并且可使用多种操作系统。产品线型号分为 A 型、B 型、Zero 型和 ComputeModule 计算卡。
-—— Wikipedia
- 产品列表  Raspberry Pi Zero Raspberry Pi Zero W Raspberry Pi 1 Model A+ Raspberry Pi 1 Model B+ Raspberry Pi 2 Model B Raspberry Pi 3 Model B Raspberry Pi 3 Model B+ Raspberry Pi 3 Model A+ Raspberry Pi 4 Model B ……  生态 树莓派之所以受到全世界的青睐，就在于它小小的身体蕴含着巨大的能量，同时还有成熟的社区生态。它不仅可以作为欠发达地区或国家学生接触计算机的首选，还可以配合一些定制化的系统或者插件，摇身一变为智能家庭中枢、NAS、魔镜、家庭影院系统等等等等，不胜枚举。</description>
-    </item>
-    
-    <item>
-      <title>修改 AirDrop 文件存放位置</title>
-      <link>https://rxtee.com/posts/change_airdrop_destination/</link>
-      <pubDate>Thu, 26 Mar 2020 19:26:25 +0800</pubDate>
-      
-      <guid>https://rxtee.com/posts/change_airdrop_destination/</guid>
-      <description>背景 「滴滴滴」，你的 Mac 收到了你 AirDrop 的文件，并「贴心」地把它存放在了 Downloads （下载）文件夹下，而你却并不期望它自动存放在下载文件夹目录下，至少我不是的。
-我喜欢给文件来源分类，譬如上图的样子，这样在很容易知道文件来源。
-如何自定义存放路径？ 按照「惯例」 Mac 上的一些配置都是以 plist 文件来管理的，只要找到对应的 plist 文件就可以「魔改」它。然而，让我失望的是：网上冲浪了一圈，并没有发现对应的配置文件😢。如果你知道请告诉我。
-那么有没有其他途径呢？
-Folder Actions 什么是 Folder Actions  Folder Actions is a feature of macOS that lets you associate AppleScript scripts with folders. A Folder Action script is executed when the folder to which it is attached has items added or removed, or when its window is opened, closed, moved, or resized. The script provides a handler that matches the appropriate format for the action, as described in this chapter.</description>
-    </item>
     
     <item>
       <title>网站支持一键向上</title>
@@ -117,31 +91,6 @@ hugo version Windows 用户请参见官网链接进行安装。
 创建第一个博文 hugo new posts/my-first-post.md 执行完毕会在 content/posts 文件夹内得到名为 my-first-post.md 的文件。
 打开该文件，其内容大概为：
 +++ draft = true date = 2020-03-20T16:29:27+08:00 title = &amp;#34;&amp;#34; description = &amp;#34;&amp;#34; slug = &amp;#34;&amp;#34; tags = [] categories = [] externalLink = &amp;#34;&amp;#34; series = [] +++ 启动 Hugo 服务器 hugo server -D | EN +------------------+----+ Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 3 Processed images | 0 Aliases | 1 Sitemaps | 1 Cleaned | 0 Total in 11 ms Watching for changes in /Users/xxx/blog/{content,data,layouts,static,themes} Watching for config changes in /Users/xxx/blog/config.</description>
-    </item>
-    
-    <item>
-      <title>创建 GitHub Pages 仓库</title>
-      <link>https://rxtee.com/posts/githubpages/</link>
-      <pubDate>Fri, 20 Mar 2020 13:20:58 +0800</pubDate>
-      
-      <guid>https://rxtee.com/posts/githubpages/</guid>
-      <description>Github Pages GitHub Pages 是一项静态站点托管服务，它直接从 GitHub 上的仓库获取 HTML、CSS 和 JavaScript 文件，（可选）通过构建过程运行文件，然后发布网站。
-如何使用 步骤一 首先，请确保已注册 Github。注册完毕之后或你已有账号请前往步骤二。
-步骤二 创建网站所需的仓库。
-其中仓库名需按照 xxxxx.github.io 格式来设置，其中 xxxxx 为你期望的名字。点击创建即可显示形如以下页面。
-步骤三 点击页面上的设置，找到 GitHub Pages 设置，在 Source 中选择 master branch 。如果 master branch 选项不可选，进先进行步骤四。如果可选即设置完成，并可以发现设置完成后页面上出现了一个可以访问的链接，该链接即为你的网站链接。
-步骤四 在你本地的网站目录下执行以下指令，上传你的网站到所创建的仓库内。
-git init git add -A git commit -m &amp;#34;first commit&amp;#34; git remote add origin https://github.com/XXXX/xxxxx.github.io.git git push -u origin master 因为 GitHub Pages 仅在仓库内有内容时，或者说仅在 master 分支存在时，才允许选择 master 作为 GitHub Pages 的 Source。</description>
-    </item>
-    
-    <item>
-      <title>Homebrew</title>
-      <link>https://rxtee.com/posts/homebrew/</link>
-      <pubDate>Fri, 20 Mar 2020 12:40:38 +0800</pubDate>
-      
-      <guid>https://rxtee.com/posts/homebrew/</guid>
-      <description>Homebrew. The Missing Package Manager for macOS (or Linux).
-Install /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; Paste that in a macOS Terminal or Linux shell prompt.</description>
     </item>
     
   </channel>

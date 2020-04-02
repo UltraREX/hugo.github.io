@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on mLogger</title>
+    <link>https://rxtee.com/series/</link>
+    <description>Recent content in Series on mLogger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 Apr 2020 18:05:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://rxtee.com/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://rxtee.com/series/raspberry-pi/</link>
+      <pubDate>Thu, 02 Apr 2020 18:05:51 +0800</pubDate>
+      
+      <guid>https://rxtee.com/series/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://rxtee.com/series/hugo/</link>
+      <pubDate>Sun, 22 Mar 2020 13:07:39 +0800</pubDate>
+      
+      <guid>https://rxtee.com/series/hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

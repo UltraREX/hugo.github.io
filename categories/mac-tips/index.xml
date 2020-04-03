@@ -6,10 +6,21 @@
     <description>Recent content in Mac Tips on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Mar 2020 19:26:25 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 10:41:12 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/categories/mac-tips/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>给你的 Mac 快速预览加点儿料</title>
+      <link>https://rxtee.com/posts/quicklook_plugins/</link>
+      <pubDate>Fri, 03 Apr 2020 10:41:12 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/quicklook_plugins/</guid>
+      <description>引言 QuickLook 是什么？ QuickLook 是苹果自 OS X 10.5 版本引入的一项技术。用户可以在不打开文件的情况下，只需要选中文件，单击空格键，即可快速预览文件内容。
+QuickLook 扩展性 查询苹果开发者文档关于 QuickLook 介绍部分：
+ QuickLook is a technology introduced in OS X version 10.5 that enables client applications, such as Spotlight and the Finder, to display thumbnail images and full-size previews of documents. For documents of common content types—notably HTML, RTF, plain text, TIFF, PNG, JPEG, PDF, DAE, and QuickTime movies—this support is automatic. However, applications with documents that are of less common or even private content types can still take advantage of the QuickLook feature.</description>
+    </item>
     
     <item>
       <title>修改 AirDrop 文件存放位置</title>

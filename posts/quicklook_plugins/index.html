@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ray Young">
+    <meta name="description" content="No hard feelings.">
+    <meta name="keywords" content="blog, macOS, Mac, iMac, MacBook, MacBook Pro, iOS, iPhone, watchOS, Apple Watch, AirPods, AirPods Pro, Tech, Code, Coder, Developer, Movie, Music">
+
+    <meta property="og:image" content="/img/favicon.ico" />
+    
+    <meta property="og:locale" content="zh-cn" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="给你的 Mac 快速预览加点儿料"/>
+<meta name="twitter:description" content="给你的 Mac 快速预览加点儿料"/>
+
+    <meta property="og:title" content="给你的 Mac 快速预览加点儿料" />
+<meta property="og:description" content="给你的 Mac 快速预览加点儿料" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rxtee.com/posts/quicklook_plugins/" />
+<meta property="article:published_time" content="2020-04-03T10:41:12+08:00" />
+<meta property="article:modified_time" content="2020-04-03T10:41:12+08:00" />
+
+
+    
+      <base href="https://rxtee.com/posts/quicklook_plugins/">
+    
+    <title>
+  给你的 Mac 快速预览加点儿料 · mLogger
+</title>
+
+    
+      <link rel="canonical" href="https://rxtee.com/posts/quicklook_plugins/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rxtee.com/css/coder.min.37256bf8015e4a1f55770a08a5cf13861895cd552a70a4b677409713756936a3.css" integrity="sha256-NyVr&#43;AFeSh9VdwoIpc8ThhiVzVUqcKS2d0CXE3VpNqM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://rxtee.com/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+      <link rel="stylesheet" href="https://rxtee.com/css/custom.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.67.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rxtee.com/">
+      mLogger
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/categories/">Categories</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/series/">Series</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+<link rel="stylesheet" href="https://rxtee.com/css/pojoaque.css">
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">给你的 Mac 快速预览加点儿料</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-04-03T10:41:12&#43;08:00'>
+                April 3, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://rxtee.com/categories/mac-tips/">Mac Tips</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://rxtee.com/tags/mac-tips/">Mac Tips</a>
+      <span class="separator">•</span>
+    <a href="https://rxtee.com/tags/quicklook/">QuickLook</a></div>
+
+        </div>
+      </header>
+    
+      
+<aside class="post-toc-absolute" id="post-toc">
+    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#引言">引言</a>
+<ul>
+<li><a href="#quicklook-是什么">QuickLook 是什么？</a></li>
+<li><a href="#quicklook-扩展性">QuickLook 扩展性</a></li>
+</ul></li>
+<li><a href="#扩展">扩展</a>
+<ul>
+<li><a href="#扩展途径">扩展途径</a></li>
+<li><a href="#扩展方式">扩展方式</a>
+<ul>
+<li><a href="#扩展注意事项">扩展注意事项</a></li>
+</ul></li>
+<li><a href="#扩展预览">扩展预览</a>
+<ul>
+<li><a href="#qlcolorcode-https-github-com-anthonygelibert-qlcolorcode"><a href="https://github.com/anthonygelibert/QLColorCode">QLColorCode</a></a></li>
+<li><a href="#qlstephen-https-github-com-whomwah-qlstephen"><a href="https://github.com/whomwah/qlstephen">QLStephen</a></a></li>
+<li><a href="#qlmarkdown-https-github-com-toland-qlmarkdown"><a href="https://github.com/toland/qlmarkdown">QLMarkdown</a></a></li>
+<li><a href="#quicklookjson-http-www-sagtau-com-quicklookjson-html"><a href="http://www.sagtau.com/quicklookjson.html">QuickLookJSON</a></a></li>
+<li><a href="#betterzipql-https-macitbetter-com-downloads"><a href="https://macitbetter.com/downloads/">BetterZipQL</a></a></li>
+<li><a href="#qlimagesize-https-github-com-nyx0uf-qlimagesize"><a href="https://github.com/Nyx0uf/qlImageSize">qlImageSize</a></a></li>
+<li><a href="#suspicious-package-http-www-mothersruin-com-software-suspiciouspackage"><a href="http://www.mothersruin.com/software/SuspiciousPackage/">Suspicious Package</a></a></li>
+<li><a href="#quicklookase-https-github-com-rsodre-quicklookase"><a href="https://github.com/rsodre/QuickLookASE">QuickLookASE</a></a></li>
+<li><a href="#qlvideo-https-github-com-marginal-qlvideo"><a href="https://github.com/Marginal/QLVideo">QLVideo</a></a></li>
+</ul></li>
+<li><a href="#其他扩展">其他扩展</a>
+<ul>
+<li><a href="#provisionql-https-github-com-ealeksandrov-provisionql"><a href="https://github.com/ealeksandrov/ProvisionQL">ProvisionQL</a></a></li>
+<li><a href="#quicklookapk-https-github-com-hezi-quicklookapk"><a href="https://github.com/hezi/QuickLookAPK">QuickLookAPK</a></a></li>
+<li><a href="#quicklook-pat-https-github-com-pixelrowdies-quicklook-pat"><a href="https://github.com/pixelrowdies/quicklook-pat">quicklook-pat</a></a></li>
+<li><a href="#webp-https-github-com-dchest-webp-quicklook"><a href="https://github.com/dchest/webp-quicklook">WebP</a></a></li>
+</ul></li>
+</ul></li>
+<li><a href="#总结">总结</a></li>
+</ul></li>
+</ul>
+</nav>
+</aside>
+
+
+      <div>
+        
+        
+
+<h2 id="引言">引言</h2>
+
+<h3 id="quicklook-是什么">QuickLook 是什么？</h3>
+
+<p>QuickLook 是苹果自 OS X 10.5 版本引入的一项技术。用户可以在不打开文件的情况下，只需要选中文件，单击空格键，即可快速预览文件内容。</p>
+
+<h3 id="quicklook-扩展性">QuickLook 扩展性</h3>
+
+<p>查询苹果开发者文档关于 <a href="https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Quicklook_Programming_Guide/Introduction/Introduction.html">QuickLook</a> 介绍部分：</p>
+
+<blockquote>
+<p>QuickLook is a technology introduced in OS X version 10.5 that enables client applications, such as Spotlight and the Finder, to display thumbnail images and full-size previews of documents. For documents of common content types—notably HTML, RTF, plain text, TIFF, PNG, JPEG, PDF, DAE, and QuickTime movies—this support is automatic. However, applications with documents that are of less common or even private content types can still take advantage of the QuickLook feature. Those applications can include QuickLook generators: plug-ins that convert a given document from its native format into a format that QuickLook can display to users.</p>
+</blockquote>
+
+<p>我们可以得知（简单翻译一下）：QuickLook 是苹果自 OS X 10.5 版本引入的一项可以让客户端应用程序（如：Spotlight、Finder）能够显示文件的缩略图和全尺寸预览的一项技术。对于常见的文档类型，例如：HTML、RTF、文本文件、TIFF、PNG、JPEG、PDF、DAE 和 QuickTime 视频是原生支持的。但是，不常见的文档类型抑或是私有内容类型仍可以利用 QuickLook 这一特性。只要这些应用程序包含可以将该文档的原生格式转化为 QuickLook 显示的格式的插件即可。</p>
+
+<p>其原生支持一些常见的文件类型，而且给其他不支持类型的文件提供了扩展性支持。这就为我们对其他目前不支持的文件类型指明了道路的方向。</p>
+
+<h2 id="扩展">扩展</h2>
+
+<h3 id="扩展途径">扩展途径</h3>
+
+<ol>
+<li>硬核方式：自行开发；</li>
+<li>简单方式：找寻别人造好的轮子，为己所用。</li>
+</ol>
+
+<p>当然我选择第二种，哈哈哈。</p>
+
+<h3 id="扩展方式">扩展方式</h3>
+
+<p>经过在 GitHub 上搜寻，找到了 <a href="https://github.com/sindresorhus/quick-look-plugins">quick-look-plugins</a> 这一仓库，简直犹如发现宝藏一般。</p>
+
+<p>根据文档介绍，需使用 <code>Homebrew Cask</code> 来安装，如果你还未安装 <code>Homebrew</code> ，可以点击<a href="https://rxtee.com/posts/homebrew">这里</a>来安装。</p>
+
+<p>一行命令，安装目前所有的第三方扩展：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo</code></pre></div>
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfpqokvmj31lu0u0wqd.jpg" alt="" /></p>
+
+<p>我这里都已安装所以显示的为已安装。</p>
+
+<h4 id="扩展注意事项">扩展注意事项</h4>
+
+<p>安装完毕之后，如果你的 macOS 系统版本为最新的 Catalina 10.15 版本，需要先执行一下操作：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xattr -r ~/Library/QuickLook</code></pre></div>
+<p>查看刚刚安装的插件的文件属性，如果发现有 <code>com.apple.quarantine</code> 则还需执行以下命令：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xattr -d -r com.apple.quarantine ~/Library/QuickLook</code></pre></div>
+<h3 id="扩展预览">扩展预览</h3>
+
+<p>注：以下题图均来自 <a href="https://github.com/sindresorhus/quick-look-plugins">quick-look-plugins</a> 。</p>
+
+<h4 id="qlcolorcode-https-github-com-anthonygelibert-qlcolorcode"><a href="https://github.com/anthonygelibert/QLColorCode">QLColorCode</a></h4>
+
+<p><code>brew cask install qlcolorcode</code> 预览源码，同时支持代码高亮。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgff7n8coj310c0im0v3.jpg" alt="QLColorCode" /></p>
+
+<h4 id="qlstephen-https-github-com-whomwah-qlstephen"><a href="https://github.com/whomwah/qlstephen">QLStephen</a></h4>
+
+<p><code>brew cask install qlstephen</code> 预览没有文件扩展名的文本文件，例如：README，CHANGELOG，index.styl 等。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfhint0sj310c0iagnr.jpg" alt="QLStephen" /></p>
+
+<h4 id="qlmarkdown-https-github-com-toland-qlmarkdown"><a href="https://github.com/toland/qlmarkdown">QLMarkdown</a></h4>
+
+<p><code>brew cask install qlmarkdown</code> 预览 Markdown 文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfhzi8vcj310c0ruaco.jpg" alt="QLMarkdown" /></p>
+
+<h4 id="quicklookjson-http-www-sagtau-com-quicklookjson-html"><a href="http://www.sagtau.com/quicklookjson.html">QuickLookJSON</a></h4>
+
+<p><code>brew cask install quicklook-json</code> 预览 Json 文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfir7tr1j310c0iuad9.jpg" alt="Json" /></p>
+
+<h4 id="betterzipql-https-macitbetter-com-downloads"><a href="https://macitbetter.com/downloads/">BetterZipQL</a></h4>
+
+<p><code>brew cask install betterzip</code> 预览压缩文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfjh2224j310c0kwn0i.jpg" alt="BetterZipQL" /></p>
+
+<h4 id="qlimagesize-https-github-com-nyx0uf-qlimagesize"><a href="https://github.com/Nyx0uf/qlImageSize">qlImageSize</a></h4>
+
+<p><code>brew cask install qlimagesize</code> 预览图片，并显示图片分辨率和大小。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfkiy36wj31080rwafa.jpg" alt="qlImageSize" /></p>
+
+<h4 id="suspicious-package-http-www-mothersruin-com-software-suspiciouspackage"><a href="http://www.mothersruin.com/software/SuspiciousPackage/">Suspicious Package</a></h4>
+
+<p><code>brew cask install suspicious-package</code> 预览安装包内内容。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgflcq3rij310c0iaac1.jpg" alt="Suspicious Package" /></p>
+
+<h4 id="quicklookase-https-github-com-rsodre-quicklookase"><a href="https://github.com/rsodre/QuickLookASE">QuickLookASE</a></h4>
+
+<p><code>brew cask install quicklookase</code> 预览 Adobe ASE 文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfrblz0hj30xo0e375z.jpg" alt="QuickLookASE" /></p>
+
+<h4 id="qlvideo-https-github-com-marginal-qlvideo"><a href="https://github.com/Marginal/QLVideo">QLVideo</a></h4>
+
+<p><code>brew cask install qlvideo</code> 预览绝大多数类型视频文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfmv0meaj317z0k2ada.jpg" alt="QLVideo" /></p>
+
+<h3 id="其他扩展">其他扩展</h3>
+
+<h4 id="provisionql-https-github-com-ealeksandrov-provisionql"><a href="https://github.com/ealeksandrov/ProvisionQL">ProvisionQL</a></h4>
+
+<p><code>brew cask install provisionql</code> 预览 ipa 包内文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfsxu2uuj310c0kmacn.jpg" alt="ProvisionQL" /></p>
+
+<h4 id="quicklookapk-https-github-com-hezi-quicklookapk"><a href="https://github.com/hezi/QuickLookAPK">QuickLookAPK</a></h4>
+
+<p><code>brew cask install quicklookapk</code> 预览 apk 包内文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfxrjozlj30yc0u046l.jpg" alt="QuickLookAPK" /></p>
+
+<h4 id="quicklook-pat-https-github-com-pixelrowdies-quicklook-pat"><a href="https://github.com/pixelrowdies/quicklook-pat">quicklook-pat</a></h4>
+
+<p><code>brew cask install quicklook-pat</code> 预览 Adobe PAT 文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfytdnc8j30xs0isn30.jpg" alt="quicklook-pat" /></p>
+
+<h4 id="webp-https-github-com-dchest-webp-quicklook"><a href="https://github.com/dchest/webp-quicklook">WebP</a></h4>
+
+<p><code>brew cask install webpquicklook</code> 预览 WebP 格式文件。</p>
+
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfztm43bj310c0s07a4.jpg" alt="WebP" /></p>
+
+<h2 id="总结">总结</h2>
+
+<p>站在前人的肩膀上，能不能看得更远我不知道，绝对能省下一大把折腾的时间，感谢那些造轮子的人。</p>
+
+      </div>
+      
+      <a href="#">
+    <div class="back-to-top" style="display: none;">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+</a>
+
+      <footer>
+        
+
+
+        
+        
+        <script src="https://utteranc.es/client.js"
+    repo= "UltraREX/hugo-comment"
+    issue-term="title"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Don't Panic.​</p>
+    
+    
+      
+        © 2020
+      
+       Ray Young 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+    
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+    <script src="https://rxtee.com/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="https://rxtee.com/js/toc.js"></script>
+    
+    <script src="https://rxtee.com/js/back_to_top.js"></script>
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+    
+
+    
+  </body>
+
+</html>

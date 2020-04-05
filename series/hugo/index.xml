@@ -20,7 +20,7 @@
       <description>如果遇到长文章，网页会变得很长很长，当看到底部时，想快速返回到网页的顶端，单凭滚动鼠标滚轮，亦或者靠滑动妙控 板，似乎都是一件「苦差事」。一键向上👆变得尤为重要。
 废话不多说了，show you my code.
 配置 步骤一 创建 HTML 模板。
-在 theme/your theme name/layouts/partials 文件夹下创建文章目录模板。
+在 layouts/partials 文件夹下创建文章目录模板。
 新建名如 back_to_top.html 的文件，文件内容为：
 &amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;back-to-top&amp;#34; style=&amp;#34;display: none;&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;fa fa-arrow-up&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; 默认隐藏，稍后再来控制它的显隐。
 步骤二 创建样式。
@@ -51,7 +51,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
 配置 步骤一 在 config.toml 配置中新增如下配置。
 [params] # Table of Contents toc = true wordCount = 0 其中 wordCount 为文章字数大于该值时才生成目录配置。
 步骤二 创建 HTML 模板。
-在 theme/your theme name/layouts/partials 文件夹下创建文章目录模板。
+在 layouts/partials 文件夹下创建文章目录模板。
 新建名如 toc.html 的文件，文件内容为：
 {{ if and (gt .WordCount .Site.Params.wordCount ) (eq (.Site.Params.toc | default false) true) }} &amp;lt;aside class=&amp;#34;post-toc-absolute&amp;#34; id=&amp;#34;post-toc&amp;#34;&amp;gt; {{ .TableOfContents }} &amp;lt;/aside&amp;gt; {{ end }} 步骤三 配置显示位置。
 打开页面模板，以我的主题为例为 single.html 文件。在合适的位置插入 {{ partial &amp;quot;toc.html&amp;quot; . }} 。以我的博客为例，我放在了文章正文所在 div 前，方便以后控制样式和位置。</description>
@@ -65,16 +65,14 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
       <guid>https://rxtee.com/posts/comments_system_on_hugo/</guid>
       <description>博客，不仅是一个记录我想法的地方，而且也是一个我和外界沟通的渠道，期望有人能在我的博文下与我互动，碰撞出新的火花，所以博文可以被评论势在必行。在寻求其他方式的时候，Utterances 不经意间进入了我的视野，它轻量，配置简单，且也可以利用 GitHub 来搭建，于是就它了。
 安装 Utterances App 步骤一 首先，请确保已注册 Github。注册完毕之后或你已有账号请前往步骤二。
-步骤二 创建所需的仓库。
-由于我已经创建了 hugo-comment ，这里用 hugo-comments 做演示。你创建的时候取你喜欢的名字就好。
+  步骤二 创建所需的仓库。
+  由于我已经创建了 hugo-comment ，这里用 hugo-comments 做演示。你创建的时候取你喜欢的名字就好。
 步骤三 在 GitHub 上安装 Utterances App。
 进入 Utterances App 主页，点击安装。
-因为我已经安装过，所以这里是配置按钮。
-访问仓库选择刚刚创建的 hugo-comment ，点击安装（因为我已经安装过，所以这里是保存按钮）。
+  因为我已经安装过，所以这里是配置按钮。
+  访问仓库选择刚刚创建的 hugo-comment ，点击安装（因为我已经安装过，所以这里是保存按钮）。
 配置 步骤一 在 config.toml 配置中新增如下配置。
-disable_comments = false [params.utteranc] repo = &amp;#34;{Github Name}/{Repo Name}&amp;#34; issueTerm = &amp;#34;title&amp;#34; # 设置每篇文章对应的 issue 的名字 theme = &amp;#34;github-dark&amp;#34; 其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。
-步骤二 创建 HTML 模板。
-在 theme/your theme name/layouts/partials 文件夹下创建评论模板。</description>
+disable_comments = false [params.utteranc] repo = &amp;#34;{Github Name}/{Repo Name}&amp;#34; issueTerm = &amp;#34;title&amp;#34; # 设置每篇文章对应的 issue 的名字 theme = &amp;#34;github-dark&amp;#34; 其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。</description>
     </item>
     
     <item>

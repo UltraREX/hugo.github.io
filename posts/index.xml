@@ -6,10 +6,22 @@
     <description>Recent content in Posts on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Apr 2020 13:53:32 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 21:32:26 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>多图救星 —— 「懒加载」</title>
+      <link>https://rxtee.com/posts/lazy_load_image/</link>
+      <pubDate>Sun, 05 Apr 2020 21:32:26 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/lazy_load_image/</guid>
+      <description>引言 总所周知，网页的加载速度主要取决于页面上图片的数量和大小。一张普通的图片往往就达几 M 甚至十几 M，当页面上图片很多的时候，加载完整个页面将是一件非常耗时的事情。况且，在一寸光阴一寸金的今天，时间意味生命，每增加 1s 的加载时间消耗，就会损失很多浏览者。
+所以不仅要压缩网页上的图片，还需要在加载上拥有策略 —— 「懒加载」。浏览者不是一眼就可以浏览到网页上的所有图片的，所以当网页加载的时候只先加载浏览者目光所及之处的图片，在浏览者往下浏览的过程中，再加载即将出现在视野内的图片，这样不但可以加快整个网页的加载速度，还可给浏览者一个很好的体验。
+lazysizes  lazysizes is a fast (jank-free), SEO-friendly and self-initializing lazyloader for images (including responsive images picture/srcset), iframes, scripts/widgets and much more. It also prioritizes resources by differentiating between crucial in view and near view elements to make perceived performance even faster.
+It may become also your number one tool to integrate responsive images. It can automatically calculate the sizes attribute for your responsive images, it allows you to share media queries for your media attributes with your CSS, helping to separate layout (CSS) from content/structure (HTML) and it makes integrating responsive images into any environment really simple.</description>
+    </item>
     
     <item>
       <title>ELOH Strategy ｜ 过关秘籍</title>

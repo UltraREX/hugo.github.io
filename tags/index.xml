@@ -6,10 +6,28 @@
     <description>Recent content in Tags on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Apr 2020 13:53:32 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 21:32:26 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blog</title>
+      <link>https://rxtee.com/tags/blog/</link>
+      <pubDate>Sun, 05 Apr 2020 21:32:26 +0800</pubDate>
+      
+      <guid>https://rxtee.com/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://rxtee.com/tags/hugo/</link>
+      <pubDate>Sun, 05 Apr 2020 21:32:26 +0800</pubDate>
+      
+      <guid>https://rxtee.com/tags/hugo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ELOH</title>
@@ -62,15 +80,6 @@
       <pubDate>Thu, 26 Mar 2020 19:26:25 +0800</pubDate>
       
       <guid>https://rxtee.com/tags/airdrop/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://rxtee.com/tags/blog/</link>
-      <pubDate>Sun, 22 Mar 2020 13:07:39 +0800</pubDate>
-      
-      <guid>https://rxtee.com/tags/blog/</guid>
       <description></description>
     </item>
     

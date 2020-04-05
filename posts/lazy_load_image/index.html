@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ray Young">
+    <meta name="description" content="No hard feelings.">
+    <meta name="keywords" content="blog, macOS, Mac, iMac, MacBook, MacBook Pro, iOS, iPhone, watchOS, Apple Watch, AirPods, AirPods Pro, Tech, Code, Coder, Developer, Movie, Music">
+
+    <meta property="og:image" content="/img/favicon.ico" />
+    
+    <meta property="og:locale" content="zh-cn" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="多图救星 —— 「懒加载」"/>
+<meta name="twitter:description" content="how to boost your website with lazy load"/>
+
+    <meta property="og:title" content="多图救星 —— 「懒加载」" />
+<meta property="og:description" content="how to boost your website with lazy load" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rxtee.com/posts/lazy_load_image/" />
+<meta property="article:published_time" content="2020-04-05T21:32:26+08:00" />
+<meta property="article:modified_time" content="2020-04-05T21:32:26+08:00" />
+
+
+
+    
+      <base href="https://rxtee.com/posts/lazy_load_image/">
+    
+    <title>
+  多图救星 —— 「懒加载」 · mLogger
+</title>
+
+    
+      <link rel="canonical" href="https://rxtee.com/posts/lazy_load_image/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rxtee.com/css/coder.min.37256bf8015e4a1f55770a08a5cf13861895cd552a70a4b677409713756936a3.css" integrity="sha256-NyVr&#43;AFeSh9VdwoIpc8ThhiVzVUqcKS2d0CXE3VpNqM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://rxtee.com/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+      <link rel="stylesheet" href="https://rxtee.com/css/custom.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.67.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rxtee.com/">
+      mLogger
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/categories/">Categories</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/series/">Series</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+<link rel="stylesheet" href="https://rxtee.com/css/pojoaque.css">
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">多图救星 —— 「懒加载」</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-04-05T21:32:26&#43;08:00'>
+                April 5, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://rxtee.com/categories/website/">Website</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://rxtee.com/tags/blog/">Blog</a>
+      <span class="separator">•</span>
+    <a href="https://rxtee.com/tags/hugo/">Hugo</a></div>
+
+        </div>
+      </header>
+    
+      
+<aside class="post-toc-absolute" id="post-toc">
+    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#引言">引言</a></li>
+<li><a href="#lazysizes-https-github-com-afarkas-lazysizes"><a href="https://github.com/aFarkas/lazysizes">lazysizes</a></a></li>
+<li><a href="#如何使用">如何使用</a>
+<ul>
+<li><a href="#下载源码">下载源码</a></li>
+<li><a href="#引用">引用</a></li>
+<li><a href="#配置">配置</a></li>
+</ul></li>
+<li><a href="#如何搭配-hugo-使用">如何搭配 Hugo 使用</a>
+<ul>
+<li><a href="#创建-shortcodes-模板">创建 Shortcodes 模板</a></li>
+<li><a href="#使用">使用</a></li>
+</ul></li>
+<li><a href="#结尾">结尾</a></li>
+</ul></li>
+</ul>
+</nav>
+</aside>
+
+
+      <div>
+        
+        
+
+<h2 id="引言">引言</h2>
+
+<p>总所周知，网页的加载速度主要取决于页面上图片的数量和大小。一张普通的图片往往就达几 M 甚至十几 M，当页面上图片很多的时候，加载完整个页面将是一件非常耗时的事情。况且，在一寸光阴一寸金的今天，时间意味生命，每增加 1s 的加载时间消耗，就会损失很多浏览者。</p>
+
+<p>所以不仅要压缩网页上的图片，还需要在加载上拥有策略 —— 「懒加载」。浏览者不是一眼就可以浏览到网页上的所有图片的，所以当网页加载的时候只先加载浏览者目光所及之处的图片，在浏览者往下浏览的过程中，再加载即将出现在视野内的图片，这样不但可以加快整个网页的加载速度，还可给浏览者一个很好的体验。</p>
+
+<h2 id="lazysizes-https-github-com-afarkas-lazysizes"><a href="https://github.com/aFarkas/lazysizes">lazysizes</a></h2>
+
+<blockquote>
+<p>lazysizes is a fast (jank-free), SEO-friendly and self-initializing lazyloader for images (including responsive images picture/srcset), iframes, scripts/widgets and much more. It also prioritizes resources by differentiating between crucial in view and near view elements to make perceived performance even faster.</p>
+
+<p>It may become also your number one tool to integrate responsive images. It can automatically calculate the sizes attribute for your responsive images, it allows you to share media queries for your media attributes with your CSS, helping to separate layout (CSS) from content/structure (HTML) and it makes integrating responsive images into any environment really simple. It also includes a set of optional plugins to further extend its functionality.</p>
+
+<p>—— GitHub Repo Readme</p>
+</blockquote>
+
+<p>经过一番搜索，lazysizes 进入我的视野。它拥有轻量级，SEO 友好，不需要 jQuery 库即可使用等诸多优点。</p>
+
+<h2 id="如何使用">如何使用</h2>
+
+<h3 id="下载源码">下载源码</h3>
+
+<p>首先，下载 <a href="http://afarkas.github.io/lazysizes/lazysizes.min.js">lazysizes.min.js</a> 脚本，并在你的网页中引用。</p>
+
+<p>注：</p>
+
+<p>还可以通过 <code>npm install lazysizes --save</code> 或者 <code>bower install lazysizes --save</code> 来安装。</p>
+
+<h3 id="引用">引用</h3>
+
+<p>下载源码方式引用：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazysizes.min.js&#34;</span> <span style="color:#a6e22e">async</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
+<p>npm 或 bower 安装方式引用：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-node.js" data-lang="node.js"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;lazysizes&#39;</span>;
+<span style="color:#75715e">// import a plugin
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;lazysizes/plugins/parent-fit/ls.parent-fit&#39;</span>;
+
+<span style="color:#75715e">// Note: Never import/require the *.min.js files from the npm package.
+</span></code></pre></div>
+<h3 id="配置">配置</h3>
+
+<p>lazysizes 不需要进行任何 js 配置，只需要在你的 <code>&lt;image /&gt;</code> 标签内添加 <code>class=&quot;lazyload&quot;</code> 属性，同时使用 <code>data-src</code> 和/或 <code>data-srcset</code> 即可。当然还有一些其他可以根据自己需求设置的属性，详情可以参照 lazysizes GitHub 仓库页面。</p>
+
+<h2 id="如何搭配-hugo-使用">如何搭配 Hugo 使用</h2>
+
+<p>由于我使用的是 Hugo 这一静态网站生成器，生成静态网页时它直接根据编写 Markdown 文档生成对应的网页，就没办法手动添加 <code>class=&quot;lazyload&quot;</code> 这一属性了。如果手动在 Markdown 文档里写 Html ，那么文档就太难看了。经过搜索发现 Hugo 支持 <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a> 这一特性，一下就解决了我的痛点。</p>
+
+<h3 id="创建-shortcodes-模板">创建 Shortcodes 模板</h3>
+
+<p>在 <code>layouts</code> 文件夹下创建 <code>shortcodes</code> 文件夹（如果已存在则忽略）。并在 <code>shortcodes</code> 文件夹下创建所需的模板，以我个人为例：</p>
+
+<p>创建 <code>image.html</code> 这一模板，模板内容为：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;center&#34;</span>&gt;
+        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjAiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNNzEgMzkuMlYuNGE2My42IDYzLjYgMCAwIDEgMzMuOTYgMTQuNTdMNzcuNjggNDIuMjRhMjUuNTMgMjUuNTMgMCAwIDAtNi43LTMuMDN6IiBmaWxsPSIjMDAwIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iI2UxZTFlMSIgdHJhbnNmb3JtPSJyb3RhdGUoNDUgNjQgNjQpIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iI2UxZTFlMSIgdHJhbnNmb3JtPSJyb3RhdGUoOTAgNjQgNjQpIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iI2UxZTFlMSIgdHJhbnNmb3JtPSJyb3RhdGUoMTM1IDY0IDY0KSIvPjxwYXRoIGQ9Ik03MSAzOS4yVi40YTYzLjYgNjMuNiAwIDAgMSAzMy45NiAxNC41N0w3Ny42OCA0Mi4yNGEyNS41MyAyNS41MyAwIDAgMC02LjctMy4wM3oiIGZpbGw9IiNiZWJlYmUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA2NCA2NCkiLz48cGF0aCBkPSJNNzEgMzkuMlYuNGE2My42IDYzLjYgMCAwIDEgMzMuOTYgMTQuNTdMNzcuNjggNDIuMjRhMjUuNTMgMjUuNTMgMCAwIDAtNi43LTMuMDN6IiBmaWxsPSIjOTc5Nzk3IiB0cmFuc2Zvcm09InJvdGF0ZSgyMjUgNjQgNjQpIi8+PHBhdGggZD0iTTcxIDM5LjJWLjRhNjMuNiA2My42IDAgMCAxIDMzLjk2IDE0LjU3TDc3LjY4IDQyLjI0YTI1LjUzIDI1LjUzIDAgMCAwLTYuNy0zLjAzeiIgZmlsbD0iIzZlNmU2ZSIgdHJhbnNmb3JtPSJyb3RhdGUoMjcwIDY0IDY0KSIvPjxwYXRoIGQ9Ik03MSAzOS4yVi40YTYzLjYgNjMuNiAwIDAgMSAzMy45NiAxNC41N0w3Ny42OCA0Mi4yNGEyNS41MyAyNS41MyAwIDAgMC02LjctMy4wM3oiIGZpbGw9IiMzYzNjM2MiIHRyYW5zZm9ybT0icm90YXRlKDMxNSA2NCA2NCkiLz48YW5pbWF0ZVRyYW5zZm9ybSBhdHRyaWJ1dGVOYW1lPSJ0cmFuc2Zvcm0iIHR5cGU9InJvdGF0ZSIgdmFsdWVzPSIwIDY0IDY0OzQ1IDY0IDY0OzkwIDY0IDY0OzEzNSA2NCA2NDsxODAgNjQgNjQ7MjI1IDY0IDY0OzI3MCA2NCA2NDszMTUgNjQgNjQiIGNhbGNNb2RlPSJkaXNjcmV0ZSIgZHVyPSI3MjBtcyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiPjwvYW5pbWF0ZVRyYW5zZm9ybT48L2c+PGc+PGNpcmNsZSBmaWxsPSIjMDAwIiBjeD0iNjMuNjYiIGN5PSI2My4xNiIgcj0iMTIiLz48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJvcGFjaXR5IiBkdXI9IjcyMG1zIiBiZWdpbj0iMHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBrZXlUaW1lcz0iMDswLjU7MSIgdmFsdWVzPSIxOzA7MSIvPjwvZz48L3N2Zz4=&#34;</span> <span style="color:#a6e22e">data-src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get `src` }}&#34;</span> <span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#a6e22e">alt</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.}}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazyload&#34;</span> /&gt;
+        {{ with .Get `title` }}&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:gray;font-size:small;text-align:center;&#34;</span>&gt;- {{.}} -&lt;/<span style="color:#f92672">p</span>&gt;{{ end }}
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">p</span>&gt;</code></pre></div>
+<p><code>image</code> 这一 shortcode 接收 <code>src</code> <code>alt</code> <code>title</code> 三个参数，参数的含义我想不用过多解释了。同时为了在加载过程中，用户体验更好，添加了一个 Loading 并通过 base64 编码的形式直接写在模板里。</p>
+
+<h3 id="使用">使用</h3>
+
+<p>使用很简单，在 Markdown 文档内编写这样的标签 <code>[[&lt; image src=&quot;&quot; alt=&quot;&quot; title=&quot;&quot; &gt;]]</code> （注意：需要把 [[ ]] 替换成 {{ }}，如果直接写 Hugo 就解析了，目前我没找到如何直接输出的方法，如果你知道欢迎告诉我）即可。</p>
+
+<p>Hugo 生成网页的时候，就会把该标签替换成对应 shortcodes 模板内的内容。</p>
+
+<p>当然不要忘记在合适的地方引用 lazysizes 脚本。</p>
+
+<h2 id="结尾">结尾</h2>
+
+<p>自此，如果不出意外你网站已经可以「懒加载」网页上的图片啦，如果有任何疑问或者建议欢迎评论交流。</p>
+
+      </div>
+      
+      <a href="#">
+    <div class="back-to-top" style="display: none;">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+</a>
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3>See also in Hugo</h3>
+      <nav>
+        <ul>
+        
+        
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/back_to_top/">网站支持一键向上</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/smoothscroll/">网站上支持平滑滚动</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/toc_on_hugo/">构建文章目录</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/comments_system_on_hugo/">利用 Utterances 搭建评论系统</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/hello_hugo/">Hello Hugo</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        <script src="https://utteranc.es/client.js"
+    repo= "UltraREX/hugo-comment"
+    issue-term="title"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Don't Panic.​</p>
+    
+    
+      
+        © 2020
+      
+       Ray Young 
+    
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+    
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+    <script src="https://rxtee.com/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    <script src="https://rxtee.com/js/lazysizes.min.js" async=""></script>
+    
+    <script src="https://rxtee.com/js/toc.js"></script>
+    
+    <script src="https://rxtee.com/js/back_to_top.js"></script>
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+    
+
+    
+  </body>
+
+</html>

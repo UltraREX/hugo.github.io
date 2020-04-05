@@ -6,10 +6,19 @@
     <description>Recent content in Series on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 02 Apr 2020 18:05:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 13:53:32 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/series/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Games</title>
+      <link>https://rxtee.com/series/games/</link>
+      <pubDate>Sun, 05 Apr 2020 13:53:32 +0800</pubDate>
+      
+      <guid>https://rxtee.com/series/games/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Raspberry Pi</title>

@@ -256,7 +256,7 @@
 
 <h3 id="使用">使用</h3>
 
-<p>使用很简单，在 Markdown 文档内编写这样的标签 <code>[[&lt; image src=&quot;&quot; alt=&quot;&quot; title=&quot;&quot; &gt;]]</code> （注意：需要把 [[ ]] 替换成 {{ }}，如果直接写 Hugo 就解析了，目前我没找到如何直接输出的方法，如果你知道欢迎告诉我）即可。</p>
+<p>使用很简单，在 Markdown 文档内编写这样的标签 <code>{{&lt; image src=&quot;&quot; alt=&quot;&quot; title=&quot;&quot; &gt;}}</code> 即可，其中 <code>alt</code> 和 <code>title</code> 可缺省。</p>
 
 <p>Hugo 生成网页的时候，就会把该标签替换成对应 shortcodes 模板内的内容。</p>
 

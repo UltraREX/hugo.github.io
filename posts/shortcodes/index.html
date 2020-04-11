@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ray Young">
+    <meta name="description" content="No hard feelings.">
+    <meta name="keywords" content="blog, macOS, Mac, iMac, MacBook, MacBook Pro, iOS, iPhone, watchOS, Apple Watch, AirPods, AirPods Pro, Tech, Code, Coder, Developer, Movie, Music">
+
+    <meta property="og:image" content="/img/favicon.ico" />
+    
+    <meta property="og:locale" content="zh-cn" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="给你的 Markdown 文档添砖加瓦 ｜ Shortcodes by Hugo"/>
+<meta name="twitter:description" content="给你的 Markdown 文档添砖加瓦"/>
+
+    <meta property="og:title" content="给你的 Markdown 文档添砖加瓦 ｜ Shortcodes by Hugo" />
+<meta property="og:description" content="给你的 Markdown 文档添砖加瓦" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rxtee.com/posts/shortcodes/" />
+<meta property="article:published_time" content="2020-04-06T16:50:57+08:00" />
+<meta property="article:modified_time" content="2020-04-06T16:50:57+08:00" />
+
+
+
+    
+      <base href="https://rxtee.com/posts/shortcodes/">
+    
+    <title>
+  给你的 Markdown 文档添砖加瓦 ｜ Shortcodes by Hugo · mLogger
+</title>
+
+    
+      <link rel="canonical" href="https://rxtee.com/posts/shortcodes/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://rxtee.com/css/coder.min.37256bf8015e4a1f55770a08a5cf13861895cd552a70a4b677409713756936a3.css" integrity="sha256-NyVr&#43;AFeSh9VdwoIpc8ThhiVzVUqcKS2d0CXE3VpNqM=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://rxtee.com/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+      <link rel="stylesheet" href="https://rxtee.com/css/custom.css" />
+    
+    
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    
+      <script async src="https://rxtee.com/js/highlight.pack.js"></script>
+    
+      <script async src="https://rxtee.com/js/lazysizes.min.js"></script>
+    
+      <script async src="https://rxtee.com/js/toc.js"></script>
+    
+      <script async src="https://rxtee.com/js/back_to_top.js"></script>
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://rxtee.com/img/favicon.ico" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.67.1" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://rxtee.com/">
+      mLogger
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/categories/">Categories</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/series/">Series</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/tags/">Tags</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://rxtee.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+<link rel="stylesheet" href="https://rxtee.com/css/pojoaque.css">
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">给你的 Markdown 文档添砖加瓦 ｜ Shortcodes by Hugo</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-04-06T16:50:57&#43;08:00'>
+                April 6, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              1-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://rxtee.com/categories/website/">Website</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://rxtee.com/tags/website/">Website</a>
+      <span class="separator">•</span>
+    <a href="https://rxtee.com/tags/blog/">Blog</a></div>
+
+        </div>
+      </header>
+    
+      
+<aside class="post-toc-absolute" id="post-toc">
+    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#引言">引言</a></li>
+<li><a href="#什么是-shortcodes">什么是 Shortcodes</a></li>
+<li><a href="#使用-shortcodes">使用 Shortcodes</a></li>
+<li><a href="#第三方-shortcodes">第三方 Shortcodes</a></li>
+<li><a href="#编写自己的-shortcodes">编写自己的 Shortcodes</a>
+<ul>
+<li><a href="#创建-shortcodes-模板">创建 Shortcodes 模板</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</aside>
+
+
+      <div>
+        
+        
+
+<h2 id="引言">引言</h2>
+
+<p>Markdown 固然简洁优雅，但有时候我们还期望在文档中添加一些更加丰富的内容（视频、<code>&lt;iframe&gt;</code>，等等），就不得不写一些 HTML 在 Markdown 文档里，看起来极其不美观和优雅。那么有没有一种方式既可以像 Markdown 那样优雅又可以让我添加更多丰富内容的方法呢？答案是：有的 —— Shortcodes（我不知道如何翻译，短代码？似乎又比较难听，姑且就不翻译了）。</p>
+
+<h2 id="什么是-shortcodes">什么是 Shortcodes</h2>
+
+<blockquote>
+<p>Shortcodes are simple snippets inside your content files calling built-in or custom templates.</p>
+</blockquote>
+
+<p>正如 Hugo 文档介绍这般，Shortcodes 是写在文档中的简单代码片段，形如：<code>{{&lt; youtube 4QOkcGwjVow &gt;}}</code> （如果需要在文档内显示 Shortcodes 语句，需要在标签内添加注释将语句包起来即可，<code>{{&lt;/* somecode */&gt;}}</code>）一个简单的标签就可以在你的文档内插入 YouTube 的视频。</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/4QOkcGwjVow" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>而如果是内嵌 HTML 的方式，你需要写这些 HTML 代码在你的文档里，高下立判。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;315&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.youtube.com/embed/4QOkcGwjVow&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allow</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34;</span> <span style="color:#a6e22e">allowfullscreen</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;</code></pre></div>
+<h2 id="使用-shortcodes">使用 Shortcodes</h2>
+
+<p>详情请参见<a href="https://gohugo.io/content-management/shortcodes/">官方文档</a>，我觉得没有能比官方文档讲述地更清楚的地方了。</p>
+
+<p>需要注意的有一点：<code>{{&lt; somecode &gt;}}</code> 和 <code>{{% somecode %}}</code> 的区别，看了文档你就了然于胸。</p>
+
+<p>同时在官方文档里，你还可以了解到好几个内置的 Shortcodes，比如：</p>
+
+<ul>
+<li>figure</li>
+<li>gist</li>
+<li>highlight</li>
+<li>instagram</li>
+<li>param</li>
+<li>ref &amp; relref</li>
+<li>tweet</li>
+<li>vimeo</li>
+<li>youtube</li>
+</ul>
+
+<p>当然官方的 <a href="https://github.com/gohugoio/hugo/tree/master/docs/layouts/shortcodes">GitHub 仓库</a>内还有非常多的 Shortcodes 模板供你参考。</p>
+
+<h2 id="第三方-shortcodes">第三方 Shortcodes</h2>
+
+<p>同时也有许多第三方的 Shortcodes 模板，比如两位贡献的：</p>
+
+<ul>
+<li><a href="https://github.com/spf13/spf13.com/tree/master/layouts/shortcodes">spf13</a></li>
+<li><a href="https://github.com/martignoni/hugo-notice">martignoni</a></li>
+</ul>
+
+<h2 id="编写自己的-shortcodes">编写自己的 Shortcodes</h2>
+
+<p>当然你也可以根据自己的需求来编写自己的 Shortcodes 模板，操作起来也非常简单。</p>
+
+<h3 id="创建-shortcodes-模板">创建 Shortcodes 模板</h3>
+
+<p>在 <code>layouts/shortcodes</code> 目录下创建模板文件（如果 <code>layouts</code> 文件夹下没有 <code>shortcodes</code> 文件夹则需创建），模板文件名即为标签 <code>{{&lt; somecode &gt;}}</code> 内的命令名。</p>
+
+<p>详细的语法这里也不再赘述了，详情请参见<a href="https://gohugo.io/templates/shortcode-templates/">官方文档</a>，讲述地特别清晰。</p>
+
+<p>以 <code>image</code> 为例：</p>
+
+<ul>
+<li>创建 <code>image.html</code> 模板文件</li>
+
+<li><p>编写模板文件内容</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;center&#34;</span>&gt;
+    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/img/loading.gif&#34;</span> <span style="color:#a6e22e">data-src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get `src` }}&#34;</span> <span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#a6e22e">alt</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.}}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazyload&#34;</span> /&gt;
+    {{ with .Get `title` }}&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:gray;font-size:small;text-align:center;&#34;</span>&gt;- {{.}} -&lt;/<span style="color:#f92672">p</span>&gt;{{ end }}
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">p</span>&gt;</code></pre></div></li>
+</ul>
+
+<p>可以看到 <code>image</code> 这一 Shortcode 接收 <code>src</code> <code>alt</code> <code>title</code> 三个参数，参数的含义我想不用过多解释了。同时使用 <code>lazyload</code> 来「懒加载」图片资源，同时为了用户体验更好，添加了一个 Loading 资源，在图片资源没有加载完成时显示，如下。</p>
+
+<p>
+    <div align="center">
+        <img src="https://rxtee.com/img/loading/Bucket-1s-100px.svg" data-src=""  class="lazyload" />
+        
+    </div>
+</p>
+
+<ul>
+<li>使用</li>
+</ul>
+
+<p>在文档内编写这样的标签 <code>{{&lt; image src=&quot;the/image/path&quot; alt=&quot;&quot; title=&quot;&quot; &gt;}}</code> 即可，其中 <code>alt</code> 和 <code>title</code> 可缺省。Hugo 在生成网页的时候，就会把该标签替换成对应 shortcodes 模板内的内容。</p>
+
+<p>
+    <div align="center">
+        <img src="https://rxtee.com/img/loading/Bucket-1s-100px.svg" data-src="https://rxtee-1252402326.cos.ap-beijing.myqcloud.com/img/142665.jpg" alt="Hi" class="lazyload" />
+        <p style="color:gray;font-size:small;text-align:center;">- Say hi to Shrotcodes -</p>
+    </div>
+</p>
+
+      </div>
+      
+      <a href="#">
+    <div class="back-to-top" style="display: none;">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+</a>
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+      <h3>See also in Hugo</h3>
+      <nav>
+        <ul>
+        
+        
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/lazy_load_image/">多图救星 —— 「懒加载」 ｜ Hugo</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/back_to_top/">网站支持一键向上 ｜ Hugo</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/smoothscroll/">网站上支持平滑滚动 | Hugo</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/toc_on_hugo/">构建文章目录 ｜ Hugo</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/comments_system_on_hugo/">利用 Utterances 搭建评论系统 ｜ Hugo</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://rxtee.com/posts/hello_hugo/">Hello Hugo</a>
+            </li>
+          
+        
+        </ul>
+      </nav>
+    
+  
+</section>
+
+
+        
+        
+        <script src="https://utteranc.es/client.js"
+    repo= "UltraREX/hugo-comment"
+    issue-term="title"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Don't Panic.​</p>
+      
+      
+        ©
+        
+        2020
+         Ray Young 
+      
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+      
+    
+
+    
+  </body>
+
+</html>

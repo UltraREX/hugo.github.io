@@ -6,13 +6,27 @@
     <description>Recent content in Website on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Apr 2020 21:32:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 16:50:57 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/categories/website/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>多图救星 —— 「懒加载」</title>
+      <title>给你的 Markdown 文档添砖加瓦 ｜ Shortcodes by Hugo</title>
+      <link>https://rxtee.com/posts/shortcodes/</link>
+      <pubDate>Mon, 06 Apr 2020 16:50:57 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/shortcodes/</guid>
+      <description>引言 Markdown 固然简洁优雅，但有时候我们还期望在文档中添加一些更加丰富的内容（视频、&amp;lt;iframe&amp;gt;，等等），就不得不写一些 HTML 在 Markdown 文档里，看起来极其不美观和优雅。那么有没有一种方式既可以像 Markdown 那样优雅又可以让我添加更多丰富内容的方法呢？答案是：有的 —— Shortcodes（我不知道如何翻译，短代码？似乎又比较难听，姑且就不翻译了）。
+什么是 Shortcodes  Shortcodes are simple snippets inside your content files calling built-in or custom templates.
+ 正如 Hugo 文档介绍这般，Shortcodes 是写在文档中的简单代码片段，形如：{{&amp;lt; youtube 4QOkcGwjVow &amp;gt;}} （如果需要在文档内显示 Shortcodes 语句，需要在标签内添加注释将语句包起来即可，{{&amp;lt;/* somecode */&amp;gt;}}）一个简单的标签就可以在你的文档内插入 YouTube 的视频。
+  而如果是内嵌 HTML 的方式，你需要写这些 HTML 代码在你的文档里，高下立判。
+&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/4QOkcGwjVow&amp;#34; frameborder=&amp;#34;0&amp;#34; allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt; 使用 Shortcodes 详情请参见官方文档，我觉得没有能比官方文档讲述地更清楚的地方了。
+需要注意的有一点：{{&amp;lt; somecode &amp;gt;}} 和 {{% somecode %}} 的区别，看了文档你就了然于胸。</description>
+    </item>
+    
+    <item>
+      <title>多图救星 —— 「懒加载」 ｜ Hugo</title>
       <link>https://rxtee.com/posts/lazy_load_image/</link>
       <pubDate>Sun, 05 Apr 2020 21:32:26 +0800</pubDate>
       
@@ -24,7 +38,7 @@ It may become also your number one tool to integrate responsive images. It can a
     </item>
     
     <item>
-      <title>网站支持一键向上</title>
+      <title>网站支持一键向上 ｜ Hugo</title>
       <link>https://rxtee.com/posts/back_to_top/</link>
       <pubDate>Sun, 22 Mar 2020 13:07:39 +0800</pubDate>
       
@@ -42,7 +56,7 @@ It may become also your number one tool to integrate responsive images. It can a
     </item>
     
     <item>
-      <title>网站上支持平滑滚动</title>
+      <title>网站上支持平滑滚动 | Hugo</title>
       <link>https://rxtee.com/posts/smoothscroll/</link>
       <pubDate>Sat, 21 Mar 2020 21:40:09 +0800</pubDate>
       
@@ -54,7 +68,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
     </item>
     
     <item>
-      <title>构建文章目录</title>
+      <title>构建文章目录 ｜ Hugo</title>
       <link>https://rxtee.com/posts/toc_on_hugo/</link>
       <pubDate>Sat, 21 Mar 2020 21:05:43 +0800</pubDate>
       
@@ -70,7 +84,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
     </item>
     
     <item>
-      <title>利用 Utterances 搭建评论系统</title>
+      <title>利用 Utterances 搭建评论系统 ｜ Hugo</title>
       <link>https://rxtee.com/posts/comments_system_on_hugo/</link>
       <pubDate>Sat, 21 Mar 2020 20:19:19 +0800</pubDate>
       

@@ -6,10 +6,19 @@
     <description>Recent content in Categories on mLogger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Apr 2020 16:50:57 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 16:42:50 +0800</lastBuildDate>
     
 	<atom:link href="https://rxtee.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mac Tips</title>
+      <link>https://rxtee.com/categories/mac-tips/</link>
+      <pubDate>Sun, 12 Apr 2020 16:42:50 +0800</pubDate>
+      
+      <guid>https://rxtee.com/categories/mac-tips/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Website</title>
@@ -26,15 +35,6 @@
       <pubDate>Sun, 05 Apr 2020 13:53:32 +0800</pubDate>
       
       <guid>https://rxtee.com/categories/games/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mac Tips</title>
-      <link>https://rxtee.com/categories/mac-tips/</link>
-      <pubDate>Fri, 03 Apr 2020 10:41:12 +0800</pubDate>
-      
-      <guid>https://rxtee.com/categories/mac-tips/</guid>
       <description></description>
     </item>
     

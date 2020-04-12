@@ -3,14 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://rxtee.com/tags/blog/</loc>
-    <lastmod>2020-04-06T16:50:57+08:00</lastmod>
+    <loc>https://rxtee.com/categories/</loc>
+    <lastmod>2020-04-12T16:42:50+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://rxtee.com/categories/</loc>
+    <loc>https://rxtee.com/tags/launchpad/</loc>
+    <lastmod>2020-04-12T16:42:50+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/tags/mac-tips/</loc>
+    <lastmod>2020-04-12T16:42:50+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/categories/mac-tips/</loc>
+    <lastmod>2020-04-12T16:42:50+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/posts/</loc>
+    <lastmod>2020-04-12T16:42:50+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/tags/</loc>
+    <lastmod>2020-04-12T16:42:50+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/posts/launchpad_layout/</loc>
+    <lastmod>2020-04-12T16:42:50+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rxtee.com/tags/blog/</loc>
     <lastmod>2020-04-06T16:50:57+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -24,21 +66,7 @@
   </url>
   
   <url>
-    <loc>https://rxtee.com/posts/</loc>
-    <lastmod>2020-04-06T16:50:57+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
     <loc>https://rxtee.com/series/</loc>
-    <lastmod>2020-04-06T16:50:57+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/tags/</loc>
     <lastmod>2020-04-06T16:50:57+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -110,20 +138,6 @@
   <url>
     <loc>https://rxtee.com/categories/games/</loc>
     <lastmod>2020-04-05T13:53:32+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/tags/mac-tips/</loc>
-    <lastmod>2020-04-03T10:41:12+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rxtee.com/categories/mac-tips/</loc>
-    <lastmod>2020-04-03T10:41:12+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>

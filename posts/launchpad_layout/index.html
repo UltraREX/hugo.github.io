@@ -174,10 +174,10 @@
         <p>Launchpad 作为 macOS 查找和快捷启动应用的界面，可谓是好不方便。然而 Launchpad 默认布局下应用图标尺寸显得有点大，使得一屏显示的应用数量「屈指可数」，这给习惯用 Launchpad 启动应用的用户带来些许不便，无法满足其个性化的需求。虽然在 Launchpad 中无法调整其布局，但是我们还是可以通过终端指令来修改的。</p>
 
 <p>打开终端，输入以下指令：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">defaults write com.apple.dock springboard-columns -int 9;  <span style="font-style:italic"># 列数</span>
-defaults write com.apple.dock springboard-rows -int 9;  <span style="font-style:italic"># 行数</span>
-defaults write com.apple.dock ResetLaunchPad -bool TRUE;  <span style="font-style:italic"># 重置 Launchpad</span>
-killall Dock  <span style="font-style:italic"># 重置 Dock</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">defaults write com.apple.dock springboard-columns -int 9;  <span style="color:#75715e"># 列数</span>
+defaults write com.apple.dock springboard-rows -int 9;  <span style="color:#75715e"># 行数</span>
+defaults write com.apple.dock ResetLaunchPad -bool TRUE;  <span style="color:#75715e"># 重置 Launchpad</span>
+killall Dock  <span style="color:#75715e"># 重置 Dock</span></code></pre></div>
 <p>执行完毕之后，即可看到 Launchpad 为 9 行 9 列排布，应用图标也相应变小了。不过需要注意的是：由于重置了 Launchpad ，之前创建的文件夹会丢失，需要你重新整理下，不过一次整理幸福一生，也是值得的。</p>
 
       </div>

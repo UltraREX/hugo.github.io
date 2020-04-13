@@ -177,8 +177,8 @@
 <p>那么有没有一种方法可以让页面滚动更为顺滑呢？</p>
 
 <p>经查阅，css 就支持这一特性，设置也非常简单。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="font-weight:bold">html</span>, <span style="font-weight:bold">body</span> {
-    scroll-behavior:<span style="font-weight:bold">smooth</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">html</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span> {
+    scroll-behavior:<span style="color:#66d9ef">smooth</span>;
 }</code></pre></div>
 <p>没错，就是这么简单。我们需要做的只是在 <code>static/css</code> 文件夹内新建名为 <code>smooth-scroll.css</code> 的文件，将上述样式写入其中。并在 <code>config.toml</code> 配置文件夹中引用，即可。</p>
 

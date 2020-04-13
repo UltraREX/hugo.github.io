@@ -298,14 +298,14 @@
 <p>如果没有有线环境或者不想使用网线来给树莓派提供网络，可以设置 Wi-Fi 信息，在树莓派启动的时候就会自动连接上你所设置的 Wi-Fi。</p>
 
 <p>同样在 SD 卡的根目录，创建名为 <code>wpa_supplicant.conf</code> 的文件，文件内容为：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">country=SE
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">country<span style="color:#f92672">=</span>SE
+ctrl_interface<span style="color:#f92672">=</span>DIR<span style="color:#f92672">=</span>/var/run/wpa_supplicant GROUP<span style="color:#f92672">=</span>netdev
+update_config<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
 
-network={
-    ssid=<span style="font-style:italic">&#34;无线链接的 SSID&#34;</span>
-    psk=<span style="font-style:italic">&#34;无线密码&#34;</span>
-}</code></pre></div>
+network<span style="color:#f92672">={</span>
+    ssid<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;无线链接的 SSID&#34;</span>
+    psk<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;无线密码&#34;</span>
+<span style="color:#f92672">}</span></code></pre></div>
 <p>其中需要在 ssid 和 psk 里填写真实的 Wi-Fi 信息。</p>
 
 <h2 id="总结">总结</h2>

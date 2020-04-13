@@ -254,11 +254,11 @@
 <h3 id="步骤一-1">步骤一</h3>
 
 <p>在 <code>config.toml</code> 配置中新增如下配置。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">disable_comments = <span style="font-weight:bold">false</span>
-[params.utteranc]
-    repo = <span style="font-style:italic">&#34;{Github Name}/{Repo Name}&#34;</span>
-    issueTerm = <span style="font-style:italic">&#34;title&#34;</span> <span style="font-style:italic"># 设置每篇文章对应的 issue 的名字</span>
-    theme = <span style="font-style:italic">&#34;github-dark&#34;</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">disable_comments</span> = <span style="color:#66d9ef">false</span>
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">utteranc</span>]
+    <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;{Github Name}/{Repo Name}&#34;</span>
+    <span style="color:#a6e22e">issueTerm</span> = <span style="color:#e6db74">&#34;title&#34;</span> <span style="color:#75715e"># 设置每篇文章对应的 issue 的名字</span>
+    <span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;github-dark&#34;</span></code></pre></div>
 <p>其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。</p>
 
 <h3 id="步骤二-1">步骤二</h3>
@@ -268,15 +268,15 @@
 <p>在 <code>layouts/partials</code> 文件夹下创建评论模板。</p>
 
 <p>新建名如 <code>utteranc.html</code> 的文件，文件内容为：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{- if isset .Site.Params &#34;utteranc&#34; -}}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{- if isset .Site.Params &#34;utteranc&#34; -}}
   {{- if and (isset .Site.Params.utteranc &#34;repo&#34;) (not (eq .Site.Params.utteranc.repo &#34;&#34; )) (eq (.Params.disable_comments | default false) false) -}}
-  &lt;<span style="font-weight:bold">script</span> src=<span style="font-style:italic">&#34;https://utteranc.es/client.js&#34;</span>
-    repo= <span style="font-style:italic">&#34;{{ .Site.Params.utteranc.repo }}&#34;</span>
-    issue-term=<span style="font-style:italic">&#34;{{ default &#34;</span>title<span style="">&#34;</span> <span style="">.</span>Site<span style="">.</span>Params<span style="">.</span>utteranc<span style="">.</span>issueTerm <span style="">}}&#34;</span>
-    theme=<span style="font-style:italic">&#34;{{ default &#34;</span>github-light<span style="">&#34;</span> <span style="">.</span>Site<span style="">.</span>Params<span style="">.</span>utteranc<span style="">.</span>theme <span style="">}}&#34;</span>
-    crossorigin=<span style="font-style:italic">&#34;anonymous&#34;</span>
-    async&gt;
-  &lt;/<span style="font-weight:bold">script</span>&gt;
+  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>
+    <span style="color:#a6e22e">repo</span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{ .Site.Params.utteranc.repo }}&#34;</span>
+    <span style="color:#a6e22e">issue-term</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ default &#34;</span><span style="color:#a6e22e">title</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Site</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Params</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">utteranc</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">issueTerm</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>
+    <span style="color:#a6e22e">theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ default &#34;</span><span style="color:#a6e22e">github-light</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Site</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Params</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">utteranc</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">theme</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>
+    <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>
+    <span style="color:#a6e22e">async</span>&gt;
+  &lt;/<span style="color:#f92672">script</span>&gt;
   {{- end -}}
 {{- end -}}</code></pre></div>
 <h3 id="步骤三-1">步骤三</h3>

@@ -201,11 +201,11 @@
 <p>在 <code>layouts/partials</code> 文件夹下创建文章目录模板。</p>
 
 <p>新建名如 <code>back_to_top.html</code> 的文件，文件内容为：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;back-to-top&#34;</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;display: none;&#34;</span>&gt;
-        &lt;<span style="color:#f92672">i</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;fa fa-arrow-up&#34;</span>&gt;&lt;/<span style="color:#f92672">i</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">a</span>&gt;</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">a</span> href=<span style="font-style:italic">&#34;#&#34;</span>&gt;
+    &lt;<span style="font-weight:bold">div</span> class=<span style="font-style:italic">&#34;back-to-top&#34;</span> style=<span style="font-style:italic">&#34;display: none;&#34;</span>&gt;
+        &lt;<span style="font-weight:bold">i</span> class=<span style="font-style:italic">&#34;fa fa-arrow-up&#34;</span>&gt;&lt;/<span style="font-weight:bold">i</span>&gt;
+    &lt;/<span style="font-weight:bold">div</span>&gt;
+&lt;/<span style="font-weight:bold">a</span>&gt;</code></pre></div>
 <p>默认隐藏，稍后再来控制它的显隐。</p>
 
 <h3 id="步骤二">步骤二</h3>
@@ -215,67 +215,67 @@
 <p>在 <code>static/css</code> 文件夹下创建样式文件。</p>
 
 <p>新建名如 <code>back_to_top.css</code> 的文件，文件内容为：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">back-to-top</span> {
-    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">fixed</span>;
-    <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">25</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.5</span>);
-    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
-    <span style="color:#66d9ef">text-decoration</span>: <span style="color:#66d9ef">none</span>;
-    <span style="color:#66d9ef">-webkit-</span><span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">-moz-</span><span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="font-weight:bold">back-to-top</span> {
+    <span style="font-weight:bold">position</span>: <span style="font-weight:bold">fixed</span>;
+    <span style="font-weight:bold">bottom</span>: 25<span style="">px</span>;
+    <span style="font-weight:bold">right</span>: 25<span style="">px</span>;
+    <span style="font-weight:bold">background</span>: rgba(0, 0, 0, 0.5);
+    <span style="font-weight:bold">width</span>: 50<span style="">px</span>;
+    <span style="font-weight:bold">height</span>: 50<span style="">px</span>;
+    <span style="font-weight:bold">display</span>: <span style="font-weight:bold">block</span>;
+    <span style="font-weight:bold">text-decoration</span>: <span style="font-weight:bold">none</span>;
+    <span style="">-webkit-</span><span style="font-weight:bold">border-radius</span>: 35<span style="">px</span>;
+    <span style="">-moz-</span><span style="font-weight:bold">border-radius</span>: 35<span style="">px</span>;
+    <span style="font-weight:bold">border-radius</span>: 35<span style="">px</span>;
 }
 
-.<span style="color:#a6e22e">back-to-top</span> <span style="color:#f92672">i</span> {
-    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#fff</span>;
-    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">0</span>;
-    <span style="color:#66d9ef">position</span>: <span style="color:#66d9ef">relative</span>;
-    <span style="color:#66d9ef">left</span>: <span style="color:#ae81ff">15</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">top</span>: <span style="color:#ae81ff">14</span><span style="color:#66d9ef">px</span>;
-    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">22</span><span style="color:#66d9ef">px</span>;
+.<span style="font-weight:bold">back-to-top</span> <span style="font-weight:bold">i</span> {
+    <span style="font-weight:bold">color</span>: #fff;
+    <span style="font-weight:bold">margin</span>: 0;
+    <span style="font-weight:bold">position</span>: <span style="font-weight:bold">relative</span>;
+    <span style="font-weight:bold">left</span>: 15<span style="">px</span>;
+    <span style="font-weight:bold">top</span>: 14<span style="">px</span>;
+    <span style="font-weight:bold">font-size</span>: 22<span style="">px</span>;
 }
 
-.<span style="color:#a6e22e">back-to-top</span>:<span style="color:#a6e22e">hover</span> {
-    <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.9</span>);
-    <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+.<span style="font-weight:bold">back-to-top</span>:hover {
+    <span style="font-weight:bold">background</span>: rgba(0, 0, 0, 0.9);
+    <span style="font-weight:bold">cursor</span>: <span style="font-weight:bold">pointer</span>;
 }
 
-.<span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">color-theme-1</span> .<span style="color:#a6e22e">back-to-top</span> {
-    <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">112</span>, <span style="color:#ae81ff">66</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">0.5</span>);
+.<span style="font-weight:bold">book</span>.<span style="font-weight:bold">color-theme-1</span> .<span style="font-weight:bold">back-to-top</span> {
+    <span style="font-weight:bold">background</span>: rgba(112, 66, 20, 0.5);
 }
 
-.<span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">color-theme-1</span> .<span style="color:#a6e22e">back-to-top</span> <span style="color:#f92672">i</span> {
-    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#f3eacb</span>;
+.<span style="font-weight:bold">book</span>.<span style="font-weight:bold">color-theme-1</span> .<span style="font-weight:bold">back-to-top</span> <span style="font-weight:bold">i</span> {
+    <span style="font-weight:bold">color</span>: #f3eacb;
 }
 
-.<span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">color-theme-1</span> .<span style="color:#a6e22e">back-to-top</span>:<span style="color:#a6e22e">hover</span> {
-    <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">112</span>, <span style="color:#ae81ff">66</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">0.9</span>);
+.<span style="font-weight:bold">book</span>.<span style="font-weight:bold">color-theme-1</span> .<span style="font-weight:bold">back-to-top</span>:hover {
+    <span style="font-weight:bold">background</span>: rgba(112, 66, 20, 0.9);
 }
 
-.<span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">color-theme-2</span> .<span style="color:#a6e22e">back-to-top</span> {
-    <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">189</span>, <span style="color:#ae81ff">202</span>, <span style="color:#ae81ff">219</span>, <span style="color:#ae81ff">0.5</span>);
+.<span style="font-weight:bold">book</span>.<span style="font-weight:bold">color-theme-2</span> .<span style="font-weight:bold">back-to-top</span> {
+    <span style="font-weight:bold">background</span>: rgba(189, 202, 219, 0.5);
 }
 
-.<span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">color-theme-2</span> .<span style="color:#a6e22e">back-to-top</span> <span style="color:#f92672">i</span> {
-    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#1C1F2B</span>;
+.<span style="font-weight:bold">book</span>.<span style="font-weight:bold">color-theme-2</span> .<span style="font-weight:bold">back-to-top</span> <span style="font-weight:bold">i</span> {
+    <span style="font-weight:bold">color</span>: #1C1F2B;
 }
 
-.<span style="color:#a6e22e">book</span>.<span style="color:#a6e22e">color-theme-2</span> .<span style="color:#a6e22e">back-to-top</span>:<span style="color:#a6e22e">hover</span> {
-    <span style="color:#66d9ef">background</span>: rgba(<span style="color:#ae81ff">189</span>, <span style="color:#ae81ff">202</span>, <span style="color:#ae81ff">219</span>, <span style="color:#ae81ff">0.9</span>);
+.<span style="font-weight:bold">book</span>.<span style="font-weight:bold">color-theme-2</span> .<span style="font-weight:bold">back-to-top</span>:hover {
+    <span style="font-weight:bold">background</span>: rgba(189, 202, 219, 0.9);
 }
 
 
-@<span style="color:#66d9ef">media</span> <span style="color:#f92672">only</span> <span style="color:#f92672">screen</span>
-  <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">min-device-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">320px</span><span style="color:#f92672">)</span>
-  <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">max-device-width</span><span style="color:#f92672">:</span> <span style="color:#f92672">480px</span><span style="color:#f92672">)</span>
-  <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">-webkit-min-device-pixel-ratio</span><span style="color:#f92672">:</span> <span style="color:#f92672">2</span><span style="color:#f92672">)</span>
-  <span style="color:#f92672">and</span> <span style="color:#f92672">(</span><span style="color:#f92672">orientation</span><span style="color:#f92672">:</span> <span style="color:#f92672">portrait</span><span style="color:#f92672">)</span> {
-    .<span style="color:#a6e22e">back-to-top</span> {
-        <span style="color:#66d9ef">bottom</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
-        <span style="color:#66d9ef">right</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;
+@<span style="font-weight:bold">media</span> <span style="font-weight:bold">only</span> <span style="font-weight:bold">screen</span>
+  <span style="font-weight:bold">and</span> (<span style="font-weight:bold">min-device-width</span>: <span style="font-weight:bold">320px</span>)
+  <span style="font-weight:bold">and</span> (<span style="font-weight:bold">max-device-width</span>: <span style="font-weight:bold">480px</span>)
+  <span style="font-weight:bold">and</span> (<span style="font-weight:bold">-webkit-min-device-pixel-ratio</span>: <span style="font-weight:bold">2</span>)
+  <span style="font-weight:bold">and</span> (<span style="font-weight:bold">orientation</span>: <span style="font-weight:bold">portrait</span>) {
+    .<span style="font-weight:bold">back-to-top</span> {
+        <span style="font-weight:bold">bottom</span>: 10<span style="">px</span>;
+        <span style="font-weight:bold">right</span>: 10<span style="">px</span>;
     }
 }</code></pre></div>
 <h3 id="步骤三">步骤三</h3>
@@ -285,19 +285,19 @@
 <h3 id="步骤四">步骤四</h3>
 
 <p>创建 js 文件控制按钮显隐，在 <code>static/js</code> 文件夹下创建名为 <code>back_to_top.js</code> 文件。内容如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">bttCollection</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span>.document.<span style="color:#a6e22e">getElementsByClassName</span>(<span style="color:#e6db74">&#34;back-to-top&#34;</span>);
-    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">btt</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">bttCollection</span>[<span style="color:#ae81ff">0</span>];
-    window.<span style="color:#a6e22e">addEventListener</span>(
-        <span style="color:#e6db74">&#39;scroll&#39;</span>,
-        <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">e</span>) {
-            <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">scroll_height</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">scrollY</span>;
-            <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">scroll_height</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">315</span>) {
-                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">btt</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;none&#34;</span>) {
-                    <span style="color:#a6e22e">btt</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="font-weight:bold">let</span> bttCollection = <span style="font-weight:bold">this</span>.document.getElementsByClassName(<span style="font-style:italic">&#34;back-to-top&#34;</span>);
+    <span style="font-weight:bold">let</span> btt = bttCollection[0];
+    window.addEventListener(
+        <span style="font-style:italic">&#39;scroll&#39;</span>,
+        <span style="font-weight:bold">function</span> (e) {
+            <span style="font-weight:bold">let</span> scroll_height = window.scrollY;
+            <span style="font-weight:bold">if</span> (scroll_height &gt; 315) {
+                <span style="font-weight:bold">if</span> (btt.style.display == <span style="font-style:italic">&#34;none&#34;</span>) {
+                    btt.style.display = <span style="font-style:italic">&#34;&#34;</span>;
                 }
-            } <span style="color:#66d9ef">else</span> {
-                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">btt</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;none&#34;</span>) {
-                    <span style="color:#a6e22e">btt</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">display</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;none&#34;</span>;
+            } <span style="font-weight:bold">else</span> {
+                <span style="font-weight:bold">if</span> (btt.style.display != <span style="font-style:italic">&#34;none&#34;</span>) {
+                    btt.style.display = <span style="font-style:italic">&#34;none&#34;</span>;
                 }
             }
         }

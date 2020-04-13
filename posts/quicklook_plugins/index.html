@@ -248,7 +248,7 @@
 <p>根据文档介绍，需使用 <code>Homebrew Cask</code> 来安装，如果你还未安装 <code>Homebrew</code> ，可以点击<a href="https://rxtee.com/posts/homebrew">这里</a>来安装。</p>
 
 <p>一行命令，安装目前所有的第三方扩展：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo</code></pre></div>
 <p>
     <div align="center">
         <img src="https://rxtee.com/img/loading/Bucket-1s-100px.svg" data-src="https://tva1.sinaimg.cn/large/00831rSTly1gdgfpqokvmj31lu0u0wqd.jpg"  class="lazyload" />
@@ -261,9 +261,9 @@
 <h4 id="扩展注意事项">扩展注意事项</h4>
 
 <p>安装完毕之后，如果你的 macOS 系统版本为最新的 Catalina 10.15 版本，需要先执行一下操作：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xattr -r ~/Library/QuickLook</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xattr -r ~/Library/QuickLook</code></pre></div>
 <p>查看刚刚安装的插件的文件属性，如果发现有 <code>com.apple.quarantine</code> 则还需执行以下命令：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xattr -d -r com.apple.quarantine ~/Library/QuickLook</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xattr -d -r com.apple.quarantine ~/Library/QuickLook</code></pre></div>
 <h3 id="扩展预览">扩展预览</h3>
 
 <p>注：以下题图均来自 <a href="https://github.com/sindresorhus/quick-look-plugins" target="_black">quick-look-plugins</a> 。</p>

@@ -21,7 +21,7 @@
 什么是 Shortcodes  Shortcodes are simple snippets inside your content files calling built-in or custom templates.
  正如 Hugo 文档介绍这般，Shortcodes 是写在文档中的简单代码片段，形如：{{&amp;lt; youtube 4QOkcGwjVow &amp;gt;}} （如果需要在文档内显示 Shortcodes 语句，需要在标签内添加注释将语句包起来即可，{{&amp;lt;/* somecode */&amp;gt;}}）一个简单的标签就可以在你的文档内插入 YouTube 的视频。
   而如果是内嵌 HTML 的方式，你需要写这些 HTML 代码在你的文档里，高下立判。
-&amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/4QOkcGwjVow&amp;#34; frameborder=&amp;#34;0&amp;#34; allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt; 使用 Shortcodes 详情请参见官方文档，我觉得没有能比官方文档讲述地更清楚的地方了。
+1  &amp;lt;iframe width=&amp;#34;560&amp;#34; height=&amp;#34;315&amp;#34; src=&amp;#34;https://www.youtube.com/embed/4QOkcGwjVow&amp;#34; frameborder=&amp;#34;0&amp;#34; allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;   使用 Shortcodes 详情请参见官方文档，我觉得没有能比官方文档讲述地更清楚的地方了。
 需要注意的有一点：{{&amp;lt; somecode &amp;gt;}} 和 {{% somecode %}} 的区别，看了文档你就了然于胸。</description>
     </item>
     
@@ -48,11 +48,11 @@ It may become also your number one tool to integrate responsive images. It can a
 配置 步骤一 创建 HTML 模板。
 在 layouts/partials 文件夹下创建文章目录模板。
 新建名如 back_to_top.html 的文件，文件内容为：
-&amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;back-to-top&amp;#34; style=&amp;#34;display: none;&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;fa fa-arrow-up&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt; 默认隐藏，稍后再来控制它的显隐。
+1 2 3 4 5  &amp;lt;a href=&amp;#34;#&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;back-to-top&amp;#34; style=&amp;#34;display: none;&amp;#34;&amp;gt; &amp;lt;i class=&amp;#34;fa fa-arrow-up&amp;#34;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/a&amp;gt;   默认隐藏，稍后再来控制它的显隐。
 步骤二 创建样式。
 在 static/css 文件夹下创建样式文件。
 新建名如 back_to_top.css 的文件，文件内容为：
-.back-to-top { position: fixed; bottom: 25px; right: 25px; background: rgba(0, 0, 0, 0.5); width: 50px; height: 50px; display: block; text-decoration: none; -webkit-border-radius: 35px; -moz-border-radius: 35px; border-radius: 35px; } .back-to-top i { color: #fff; margin: 0; position: relative; left: 15px; top: 14px; font-size: 22px; } .</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63  .</description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ It may become also your number one tool to integrate responsive images. It can a
       <description>在上一篇（构建文章目录）设置了文章目录，但我发现在点击目录里的节点时，瞬间跳转到对应的文章位置，感觉有些生硬。
 那么有没有一种方法可以让页面滚动更为顺滑呢？
 经查阅，css 就支持这一特性，设置也非常简单。
-html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需要做的只是在 static/css 文件夹内新建名为 smooth-scroll.css 的文件，将上述样式写入其中。并在 config.toml 配置文件夹中引用，即可。</description>
+1 2 3  html, body { scroll-behavior:smooth; }   没错，就是这么简单。我们需要做的只是在 static/css 文件夹内新建名为 smooth-scroll.css 的文件，将上述样式写入其中。并在 config.toml 配置文件夹中引用，即可。</description>
     </item>
     
     <item>
@@ -75,12 +75,11 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
       <guid>https://rxtee.com/posts/toc_on_hugo/</guid>
       <description>总所周知，一本书拥有目录是一件非常重要的事情。不仅可以让人非常快速的了解到这本书所讲的内容，而且可以非常高效的查阅。而一篇文章也是如此。 查阅 Hugo 官方文档 后，发现它在支持这一特性，并且有两个例子可供我们参考。
 配置 步骤一 在 config.toml 配置中新增如下配置。
-[params] # Table of Contents toc = true wordCount = 0 其中 wordCount 为文章字数大于该值时才生成目录配置。
+1 2 3 4  [params] # Table of Contents toc = true wordCount = 0   其中 wordCount 为文章字数大于该值时才生成目录配置。
 步骤二 创建 HTML 模板。
 在 layouts/partials 文件夹下创建文章目录模板。
 新建名如 toc.html 的文件，文件内容为：
-{{ if and (gt .WordCount .Site.Params.wordCount ) (eq (.Site.Params.toc | default false) true) }} &amp;lt;aside class=&amp;#34;post-toc-absolute&amp;#34; id=&amp;#34;post-toc&amp;#34;&amp;gt; {{ .TableOfContents }} &amp;lt;/aside&amp;gt; {{ end }} 步骤三 配置显示位置。
-打开页面模板，以我的主题为例为 single.html 文件。在合适的位置插入 {{ partial &amp;quot;toc.html&amp;quot; . }} 。以我的博客为例，我放在了文章正文所在 div 前，方便以后控制样式和位置。</description>
+1 2 3 4 5  {{ if and (gt .WordCount .Site.Params.wordCount ) (eq (.Site.Params.toc | default false) true) }} &amp;lt;aside class=&amp;#34;post-toc-absolute&amp;#34; id=&amp;#34;post-toc&amp;#34;&amp;gt; {{ .TableOfContents }} &amp;lt;/aside&amp;gt; {{ end }}   步骤三 配置显示位置。</description>
     </item>
     
     <item>
@@ -98,7 +97,7 @@ html, body { scroll-behavior:smooth; } 没错，就是这么简单。我们需�
   因为我已经安装过，所以这里是配置按钮。
   访问仓库选择刚刚创建的 hugo-comment ，点击安装（因为我已经安装过，所以这里是保存按钮）。
 配置 步骤一 在 config.toml 配置中新增如下配置。
-disable_comments = false [params.utteranc] repo = &amp;#34;{Github Name}/{Repo Name}&amp;#34; issueTerm = &amp;#34;title&amp;#34; # 设置每篇文章对应的 issue 的名字 theme = &amp;#34;github-dark&amp;#34; 其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。</description>
+1 2 3 4 5  disable_comments = false [params.utteranc] repo = &amp;#34;{Github Name}/{Repo Name}&amp;#34; issueTerm = &amp;#34;title&amp;#34; # 设置每篇文章对应的 issue 的名字 theme = &amp;#34;github-dark&amp;#34;   其中 {Github Name} 为 GitHub 账户名（username），{Repo Name} 为刚刚创建的仓库名，如果没有配置对，评论框是显示不出来的。</description>
     </item>
     
     <item>
@@ -109,12 +108,10 @@ disable_comments = false [params.utteranc] repo = &amp;#34;{Github Name}/{Repo N
       <guid>https://rxtee.com/posts/hello_hugo/</guid>
       <description>Hugo Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
 安装 Mac/Linux 下推荐使用 brew 安装，如果你还没有安装 brew 请点击这里查看安装方法。
-brew install hugo 执行成功后，再次执行以下指令，验证是否安装成功。
-hugo version Windows 用户请参见官网链接进行安装。
-基本使用 创建新站点 hugo new site blog 添加主题 cd blog git init git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder 然后在 config.toml 配置文件中，添加 theme = &amp;ldquo;hugo-coder&amp;rdquo;
-创建第一个博文 hugo new posts/my-first-post.md 执行完毕会在 content/posts 文件夹内得到名为 my-first-post.md 的文件。
-打开该文件，其内容大概为：
-+++ draft = true date = 2020-03-20T16:29:27+08:00 title = &amp;#34;&amp;#34; description = &amp;#34;&amp;#34; slug = &amp;#34;&amp;#34; tags = [] categories = [] externalLink = &amp;#34;&amp;#34; series = [] +++ 启动 Hugo 服务器 hugo server -D | EN +------------------+----+ Pages | 10 Paginator pages | 0 Non-page files | 0 Static files | 3 Processed images | 0 Aliases | 1 Sitemaps | 1 Cleaned | 0 Total in 11 ms Watching for changes in /Users/xxx/blog/{content,data,layouts,static,themes} Watching for config changes in /Users/xxx/blog/config.</description>
+1  brew install hugo   执行成功后，再次执行以下指令，验证是否安装成功。
+1  hugo version   Windows 用户请参见官网链接进行安装。
+基本使用 创建新站点 1  hugo new site blog   添加主题 1 2 3  cd blog git init git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder   然后在 config.toml 配置文件中，添加 theme = &amp;ldquo;hugo-coder&amp;rdquo;
+创建第一个博文 1  hugo new posts/my-first-post.md   执行完毕会在 content/posts 文件夹内得到名为 my-first-post.</description>
     </item>
     
   </channel>

@@ -125,9 +125,6 @@
   </section>
 </nav>
 
-<link rel="stylesheet" href="https://rxtee.com/css/pojoaque.css">
-<script src="js/back_to_top.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
       <div class="content">
         
@@ -177,9 +174,18 @@
 <p>那么有没有一种方法可以让页面滚动更为顺滑呢？</p>
 
 <p>经查阅，css 就支持这一特性，设置也非常简单。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="font-weight:bold">html</span>, <span style="font-weight:bold">body</span> {
-    scroll-behavior:<span style="font-weight:bold">smooth</span>;
-}</code></pre></div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">html</span><span style="color:#f92672">,</span> <span style="color:#f92672">body</span> {
+    scroll-behavior:<span style="color:#66d9ef">smooth</span>;
+}</code></pre></td></tr></table>
+</div>
+</div>
 <p>没错，就是这么简单。我们需要做的只是在 <code>static/css</code> 文件夹内新建名为 <code>smooth-scroll.css</code> 的文件，将上述样式写入其中。并在 <code>config.toml</code> 配置文件夹中引用，即可。</p>
 
       </div>

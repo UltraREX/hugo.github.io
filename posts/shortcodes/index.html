@@ -125,9 +125,6 @@
   </section>
 </nav>
 
-<link rel="stylesheet" href="https://rxtee.com/css/pojoaque.css">
-<script src="js/back_to_top.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
       <div class="content">
         
@@ -207,7 +204,14 @@
 
 
 <p>而如果是内嵌 HTML 的方式，你需要写这些 HTML 代码在你的文档里，高下立判。</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">iframe</span> width=<span style="font-style:italic">&#34;560&#34;</span> height=<span style="font-style:italic">&#34;315&#34;</span> src=<span style="font-style:italic">&#34;https://www.youtube.com/embed/4QOkcGwjVow&#34;</span> frameborder=<span style="font-style:italic">&#34;0&#34;</span> allow=<span style="font-style:italic">&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34;</span> allowfullscreen&gt;&lt;/<span style="font-weight:bold">iframe</span>&gt;</code></pre></div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">iframe</span> <span style="color:#a6e22e">width</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;560&#34;</span> <span style="color:#a6e22e">height</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;315&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://www.youtube.com/embed/4QOkcGwjVow&#34;</span> <span style="color:#a6e22e">frameborder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">allow</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34;</span> <span style="color:#a6e22e">allowfullscreen</span>&gt;&lt;/<span style="color:#f92672">iframe</span>&gt;</code></pre></td></tr></table>
+</div>
+</div>
 <h2 id="使用-shortcodes">使用 Shortcodes</h2>
 
 <p>详情请参见<a href="https://gohugo.io/content-management/shortcodes/" target="_black">官方文档</a>，我觉得没有能比官方文档讲述地更清楚的地方了。</p>
@@ -255,12 +259,24 @@
 <li>创建 <code>image.html</code> 模板文件</li>
 
 <li><p>编写模板文件内容</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">p</span>&gt;
-&lt;<span style="font-weight:bold">div</span> align=<span style="font-style:italic">&#34;center&#34;</span>&gt;
-    &lt;<span style="font-weight:bold">img</span> src=<span style="font-style:italic">&#34;/img/loading.gif&#34;</span> data-src=<span style="font-style:italic">&#34;{{ .Get `src` }}&#34;</span> <span style="">{{</span> with <span style="">.</span>Get <span style="">`</span>alt<span style="">`</span> <span style="">}}</span>alt=<span style="font-style:italic">&#34;{{.}}&#34;</span><span style="">{{</span> end <span style="">}}</span> class=<span style="font-style:italic">&#34;lazyload&#34;</span> /&gt;
-    {{ with .Get `title` }}&lt;<span style="font-weight:bold">p</span> style=<span style="font-style:italic">&#34;color:gray;font-size:small;text-align:center;&#34;</span>&gt;- {{.}} -&lt;/<span style="font-weight:bold">p</span>&gt;{{ end }}
-&lt;/<span style="font-weight:bold">div</span>&gt;
-&lt;/<span style="font-weight:bold">p</span>&gt;</code></pre></div></li>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">p</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">align</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;center&#34;</span>&gt;
+    &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/img/loading.gif&#34;</span> <span style="color:#a6e22e">data-src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Get `src` }}&#34;</span> <span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">with</span> <span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">Get</span> <span style="color:#960050;background-color:#1e0010">`</span><span style="color:#a6e22e">alt</span><span style="color:#960050;background-color:#1e0010">`</span> <span style="color:#960050;background-color:#1e0010">}}</span><span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{.}}&#34;</span><span style="color:#960050;background-color:#1e0010">{{</span> <span style="color:#a6e22e">end</span> <span style="color:#960050;background-color:#1e0010">}}</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazyload&#34;</span> /&gt;
+    {{ with .Get `title` }}&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color:gray;font-size:small;text-align:center;&#34;</span>&gt;- {{.}} -&lt;/<span style="color:#f92672">p</span>&gt;{{ end }}
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">p</span>&gt;</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 
 <p>可以看到 <code>image</code> 这一 Shortcode 接收 <code>src</code> <code>alt</code> <code>title</code> 三个参数，参数的含义我想不用过多解释了。同时使用 <code>lazyload</code> 来「懒加载」图片资源，同时为了用户体验更好，添加了一个 Loading 资源，在图片资源没有加载完成时显示，如下。</p>

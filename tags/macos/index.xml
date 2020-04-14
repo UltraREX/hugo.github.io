@@ -18,7 +18,7 @@
       
       <guid>https://rxtee.com/posts/homebrew/</guid>
       <description>Homebrew. The Missing Package Manager for macOS (or Linux).
-Install /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34; Paste that in a macOS Terminal or Linux shell prompt.</description>
+Install 1  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34;   Paste that in a macOS Terminal or Linux shell prompt.</description>
     </item>
     
   </channel>

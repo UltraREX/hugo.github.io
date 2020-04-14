@@ -125,9 +125,6 @@
   </section>
 </nav>
 
-<link rel="stylesheet" href="https://rxtee.com/css/pojoaque.css">
-<script src="js/back_to_top.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
       <div class="content">
         
@@ -221,14 +218,32 @@
 <h3 id="引用">引用</h3>
 
 <p>下载源码方式引用：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="font-weight:bold">script</span> src=<span style="font-style:italic">&#34;lazysizes.min.js&#34;</span> async=<span style="font-style:italic">&#34;&#34;</span>&gt;&lt;/<span style="font-weight:bold">script</span>&gt;</code></pre></div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lazysizes.min.js&#34;</span> <span style="color:#a6e22e">async</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></td></tr></table>
+</div>
+</div>
 <p>npm 或 bower 安装方式引用：</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-node.js" data-lang="node.js"><span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;lazysizes&#39;</span>;
-<span style="font-style:italic">// import a plugin
-</span><span style="font-style:italic"></span><span style="font-weight:bold">import</span> <span style="font-style:italic">&#39;lazysizes/plugins/parent-fit/ls.parent-fit&#39;</span>;
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-node.js" data-lang="node.js"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;lazysizes&#39;</span>;
+<span style="color:#75715e">// import a plugin
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;lazysizes/plugins/parent-fit/ls.parent-fit&#39;</span>;
 
-<span style="font-style:italic">// Note: Never import/require the *.min.js files from the npm package.
-</span></code></pre></div>
+<span style="color:#75715e">// Note: Never import/require the *.min.js files from the npm package.
+</span></code></pre></td></tr></table>
+</div>
+</div>
 <h3 id="配置">配置</h3>
 
 <p>lazysizes 不需要进行任何 js 配置，只需要在你的 <code>&lt;image /&gt;</code> 标签内添加 <code>class=&quot;lazyload&quot;</code> 属性，同时使用 <code>data-src</code> 和/或 <code>data-srcset</code> 即可。当然还有一些其他可以根据自己需求设置的属性，详情可以参照 lazysizes GitHub 仓库页面。</p>

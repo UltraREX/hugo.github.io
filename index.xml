@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Flutter Matters</title>
+      <link>https://rxtee.com/posts/flutter_matters/</link>
+      <pubDate>Tue, 14 Apr 2020 17:09:06 +0800</pubDate>
+      
+      <guid>https://rxtee.com/posts/flutter_matters/</guid>
+      <description>issue: Waiting for another flutter command to release the startup lock
+solution:
+ cd $FLUTTERPATH/cache rm lockfile file reopen AndroidStudio  </description>
+    </item>
+    
+    <item>
       <title>修改 Launchpad 布局</title>
       <link>https://rxtee.com/posts/launchpad_layout/</link>
       <pubDate>Sun, 12 Apr 2020 16:42:50 +0800</pubDate>

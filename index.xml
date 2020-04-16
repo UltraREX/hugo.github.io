@@ -19,7 +19,7 @@
       <guid>https://rxtee.com/posts/flutter_matters/</guid>
       <description>issue: Waiting for another flutter command to release the startup lock
 solution:
- cd $FLUTTERPATH/cache rm lockfile file reopen AndroidStudio  </description>
+ cd $FLUTTERPATH/cache rm lockfile file try it again  </description>
     </item>
     
     <item>

@@ -22,7 +22,7 @@ solution:
  cd $FLUTTERPATH/cache rm lockfile file try it again  issue: linked and embedded framework &amp;lsquo;App.framework&amp;rsquo; not satisfied
 Building for iOS, but the linked and embedded framework &amp;lsquo;App.framework&amp;rsquo; was built for iOS Simulator. Building for iOS Simulator, but the linked and embedded framework &amp;lsquo;App.framework&amp;rsquo; was built for iOS.
 solution:
-see {{ url link=&amp;ldquo;https://flutter.dev/docs/development/ios-project-migration&amp;quot; text=&amp;ldquo;this&amp;rdquo; }}</description>
+see this</description>
     </item>
     
     <item>

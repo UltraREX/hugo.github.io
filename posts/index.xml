@@ -19,7 +19,10 @@
       <guid>https://rxtee.com/posts/flutter_matters/</guid>
       <description>issue: Waiting for another flutter command to release the startup lock
 solution:
- cd $FLUTTERPATH/cache rm lockfile file try it again  </description>
+ cd $FLUTTERPATH/cache rm lockfile file try it again  issue: linked and embedded framework &amp;lsquo;App.framework&amp;rsquo; not satisfied
+Building for iOS, but the linked and embedded framework &amp;lsquo;App.framework&amp;rsquo; was built for iOS Simulator. Building for iOS Simulator, but the linked and embedded framework &amp;lsquo;App.framework&amp;rsquo; was built for iOS.
+solution:
+see {{ url link=&amp;ldquo;https://flutter.dev/docs/development/ios-project-migration&amp;quot; text=&amp;ldquo;this&amp;rdquo; }}</description>
     </item>
     
     <item>
